@@ -1,0 +1,21 @@
+/* ceci n'est pas un commantaire */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.header1 {
+  color: white;
+  font-family: courier, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: transparent;
+}
+
+.header2 {
+  margin: auto;
+  color: white;
+  font-family: verdana, helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+}

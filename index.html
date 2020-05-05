@@ -1,0 +1,100 @@
+<!-- ceci n'est pas un commentaire -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- viewport : user's visible area of a web page -->
+    <!-- device-width : sets the width of the page to follow the screen-width of the device -->
+    <!-- initial-scale-1 : sets the initial zoom level when the page is first loaded by the browser -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link type=""rel="stylesheet" href="./style.css">
+    <title>Hello world, Bootstrap!</title>
+  </head>
+  <body>
+    <!-- navbar : creates a navigation bar -->
+    <!-- navbar-expand-* : responsive collapsible class -->
+    <!-- navbar-light : adds black text to all links in the navbar -->
+    <!-- bg-light : adds a light grey background color to an element -->
+    <!-- sticky-top : makes an element stay fixed at the top of the page when you scroll past it -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!-- container-fluid : spans the full width of the screen -->
+      <div class="container-fluid">
+        <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
+        <a class="navbar-brand" href="#"><h1 class="header1">Landscaper</h1></a>
+        <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar-collapse : collapses the navbar -->
+        <div class="collapse navbar-collapse" id="#navbarResponsive">
+          <!-- unordered list -->
+          <ul class="navbar-nav ml-auto">
+            <!-- styles list items inside the navbar -->
+            <li class="nav-item">
+              <!-- styles links/anchors inside the navbar -->
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TERTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--- Image Slider -->
+    <!-- carousel slide : adds a CSS transition and animation effect when sliding from one item to the next -->
+    <!-- data-ride : carousel : start animation when adds a CSS transition and animation effect when sliding from one item to the next -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <img src="img/intro-bg.jpg">
+      <!-- carousel-caption : create a caption for each slide -->
+      <div class="carousel-caption">
+        <!-- display text over the first slide -->
+        <h1 class="header2">LANSCAPING SERVICES</h1>
+      </div>
+      <!--
+      <!-- carousel-indicators : adds little dots at the bottom of each slide -->
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+      </ul>
+      <!-- carousel-inner : adds slides to the carousel -->
+      <div class="carousel-inner">
+        <!-- carousel-item : specifies the content of each slide -->
+        <div class="carousel-item active">
+          <img src="img/intro-bg.jpg">
+          <!-- carousel-caption : create a caption for each slide -->
+          <div class="carousel-caption">
+            <!-- display text over the first slide -->
+            <h1 class="header2">LANSCAPING SERVICES</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- awesome fonts -->
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>
