@@ -1,6 +1,6 @@
 <!-- ceci n'est pas un commentaire -->
 <!DOCTYPE html>
-<html class="csstransforms csstransforms3d csstransitions nivo-lightbox-notouch" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
   <!-- Required meta tags -->
@@ -15,58 +15,77 @@
   <title>Hello world, Bootstrap!</title>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-sticky-top">
-  <!-- header : navigation bar -->
+<!-- data-spy : -->
+<!-- data-target : -->
 
-  <!-- navbar : creates a navigation bar -->
-  <!-- navbar-expand-* : responsive collapsible class -->
-  <!-- navbar-light : adds black text to all links in the navbar -->
-  <!-- bg-light : adds a light grey background color to an element -->
-  <!-- sticky-top : makes an element stay fixed at the top of the page when you scroll past it -->
-  <nav id="menu" class="navbar navbar-default navbar-fixed-top on">
-    <!-- container-fluid : spans the full width of the screen -->
-    <div class="container-fluid">
-      <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
-      <a class="navbar-brand page-scroll" href="#page-top">Landscaper</a>
-      <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
+<body id="page-top" data-spy="scroll" data-target=".navbar-sticky-top">
+  <!-- nav :  -->
+  <!-- navbar-default :  -->
+  <!-- navbar-fixed-top :  -->
+  <!-- on : -->
+  <nav id="menu" class="navbar navbar-default navbar-sticky-top">
+    <!-- navbar-header : -->
+    <div class="navbar-header">
+      <!-- navbar-toggle : -->
+      <!-- collapse : -->
+      <!-- data-toggle : -->
+      <!-- data-target : -->
+      <button class="navbar-toggle collapse" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toogle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-      <!-- navbar-collapse : collapses the navbar -->
-      <div class="collapse navbar-collapse" id="#navbarResponsive">
-        <!-- unordered list -->
-        <ul class="navbar-nav ml-auto">
-          <!-- styles list items inside the navbar -->
-          <li class="nav-item active">
-            <!-- styles links/anchors inside the navbar -->
-            <a class="page-scroll" href="#about">ABOUT</a>
-          </li>
-          <li class="nav-item disabled disabled">
-            <a class="page-scroll" href="#services">SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="page-scroll" href="#gallery">GALLERY</a>
-          </li>
-          <li class="nav-item">
-            <a class="page-scroll" href="#testimonials">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a class="page-scroll" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+      <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
+      <!-- page-scroll : -->
+      <a class="navbar-brand page-scroll" href="#page-top">Landscaper</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- unordered list -->
+      <!-- nav : -->
+      <!-- navbar-nav : -->
+      <!-- navbar-right : -->
+      <ul class="nav navbar-nav navbar-right">
+        <!-- li : -->
+        <li>
+          <!-- page-scroll : -->
+          <a class="page-scroll" href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#services">SERVICES</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#gallery">GALLERY</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#testimonials">TESTIMONIALS</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact">CONTACT</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <!-- test -->
-  <div class="container-fluid p-5">
-    <div class="text-center">
-      <h1 class="display-4 mt-5">Hola.</h1>
+  <!-- header section-->
+  <header id="header">
+    <div class="intro">
+      <div class="overlay">
+        <div class="col-md-8 col-md-2 intro-text">
+          <h1>Lanscaping Services</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <br>
+          <p>Duis sed dapibus leo nec ornare diam.</p>
+          <a class="btn btn-custom btn-lg page-scroll" href="#about">More Info</a>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
 
   <!--- about section -->
+  <!-- create div with id 'about' -->
   <div id="about">
+    <!-- container : fixed width container with widths determined by screen sites, and equal margin on the left and right -->
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6">
@@ -117,35 +136,87 @@
   </div>
 
   <!--- three column section -->
-  <div class="container-fluid p-1">
-    <div class="row text-center p-1">
-      <div class="col-md-3">
-        <!-- fas : font awesome web application icons -->
-        <img class="service" src="img/services/service-1.jpg">
-        <h3>Lawn Care</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-      </div>
-      <div class="col-md-3">
-        <!-- fas : font awesome web application icons -->
-        <img class="service" src="img/services/service-2.jpg">
-        <h3>Landscape Design</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-      </div>
-      <div class="col-md-3">
-        <!-- fas : font awesome web application icons -->
-        <img class="service" src="img/services/service-3.jpg">
-        <h3>Tree Care</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-      </div>
-      <div class="col-md-3">
-        <!-- fas : font awesome web application icons -->
-        <img class="service" src="img/services/service-4.jpg">
-        <h3>Spring & Fall Cleanup</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+  <div id="services">
+    <div class="container-fluid p-1 1">
+      <div class="row text-center p-1 2">
+        <div class="col-md-3 3">
+          <!-- fas : font awesome web application icons -->
+          <img class="service rounded-circle" src="img/services/service-1.jpg">
+          <h3>Lawn Care</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+        <div class="col-md-3">
+          <!-- fas : font awesome web application icons -->
+          <img class="service rounded-circle" src="img/services/service-2.jpg">
+          <h3>Landscape Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+        <div class="col-md-3">
+          <!-- fas : font awesome web application icons -->
+          <img class="service rounded-circle" src="img/services/service-3.jpg">
+          <h3>Tree Care</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+        <div class="col-md-3">
+          <!-- fas : font awesome web application icons -->
+          <img class="service rounded-circle" src="img/services/service-4.jpg">
+          <h3>Spring & Fall Cleanup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- testimonials section -->
+  <div id="testimonials" class="my-class">
+    <div class="container">
+      <h1 class="display-5 pt-5 m-5 text-center">Testimonials</h1>
+      <hr>
+    <!-- </div> -->
+      <div id="slides" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+        <ul class="carousel-indicators">
+          <li class="p-1 m-2" data-target="#slides" data-slide-to="0" class="active"></li>
+          <li class="p-1 m-2" data-target="#slides" data-slide-to="1"></li>
+          <li class="p-1 m-2" data-target="#slides" data-slide-to="2"></li>
+          <li class="p-1 m-2" data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <!-- carousel-inner : adds slides to the carousel -->
+        <div class="carousel-inner">
+          <!-- carousel-item : specifies the content of each slide -->
+          <div class="carousel-item active">
+            <!-- carousel-caption : create a caption for each slide -->
+            <div class="carousel-caption">
+              <p class="text-center p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p class="text-center">- John DOE, Parker County, TX</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p class="text-center p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p class="text-center">- Jenny DOE, Parker County, TX</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p class="text-center p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p class="text-center">- John POE, Parker County, TX</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p class="text-center p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
+              <p class="text-center">- Brian POE, Parker County, TX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container display-5 text-center p-5">
+    WHAT THE FUUUUUUUCK
+  </div>
 
 
 
