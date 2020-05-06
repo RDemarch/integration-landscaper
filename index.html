@@ -1,19 +1,21 @@
 <!-- ceci n'est pas un commentaire -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="csstransforms csstransforms3d csstransitions nivo-lightbox-notouch" lang="en" dir="ltr">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <!-- viewport : user's visible area of a web page -->
   <!-- device-width : sets the width of the page to follow the screen-width of the device -->
   <!-- initial-scale-1 : sets the initial zoom level when the page is first loaded by the browser -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link type=""rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link type="" rel="stylesheet" href="./style.css">
   <title>Hello world, Bootstrap!</title>
 </head>
-<body>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-sticky-top">
   <!-- header : navigation bar -->
 
   <!-- navbar : creates a navigation bar -->
@@ -21,11 +23,11 @@
   <!-- navbar-light : adds black text to all links in the navbar -->
   <!-- bg-light : adds a light grey background color to an element -->
   <!-- sticky-top : makes an element stay fixed at the top of the page when you scroll past it -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top on">
     <!-- container-fluid : spans the full width of the screen -->
     <div class="container-fluid">
       <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
-      <a class="navbar-brand" href="#">Landscaper</a>
+      <a class="navbar-brand page-scroll" href="#page-top">Landscaper</a>
       <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -35,50 +37,114 @@
         <!-- unordered list -->
         <ul class="navbar-nav ml-auto">
           <!-- styles list items inside the navbar -->
-          <li class="active">
+          <li class="nav-item active">
             <!-- styles links/anchors inside the navbar -->
-            <a class="page-scroll" href="#">ABOUT</a>
+            <a class="page-scroll" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item disabled disabled">
+            <a class="page-scroll" href="#services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICES</a>
+            <a class="page-scroll" href="#gallery">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">GALLERY</a>
+            <a class="page-scroll" href="#testimonials">TESTIMONIALS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="page-scroll" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!--- two column section -->
-	<div id="about" class="container-fluid p-5">
-		<div class="row padding">
-			<div class="col-md-6">
-				<h2>Welcome to <span id="welcome-landscaper">Landscaper</span></h2>
-        <hr class="my-4">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-				<br>
-				<a href="#" class="btn btn-primary" id="btn-view-sevices">VIEW ALL SERVICES</a>
-			</div>
-			<div class="col-md-3">
-				<img src="img/about-1.jpg" class="img-fluid">
-        <h5 class="pt-3 pb-3">Garden Care</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
-			</div>
+  <!-- test -->
+  <div class="container-fluid p-5">
+    <div class="text-center">
+      <h1 class="display-4 mt-5">Hola.</h1>
+    </div>
+  </div>
+
+  <!--- about section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="about-text">
+            <h2>Welcome to <span>Landscaper</span></h2>
+          </div>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <a class="btn btn-custom btn-lg page-scroll" href="#services">VIEW ALL SERVICES</a>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="about-media">
+            <img src="img/about-1.jpg" alt=" ">
+          </div>
+          <div class="about-desc">
+            <h3>Garden Care</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="about-media">
+            <img src="img/about-2.jpg" alt=" ">
+          </div>
+          <div class="about-desc">
+            <h3>Lawn Care</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- our services section -->
+  <div class="container-fluid p-1" data-spy="scroll" data-target="#myNav" data-offset="0">
+    <!-- row : container for responsive columns -->
+    <div class="row welcome text-center">
+      <!-- this takes 100% of the screen and all 12 columns -->
+      <div class="col-12">
+        <h1 id="services" class="display-4">Our Services</h1>
+      </div>
+      <hr class="my-4">
+      <div class="col-12">
+        <!-- lead : increase the font size and line height of a paragraph -->
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit duis sed dapibus leonec.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--- three column section -->
+  <div class="container-fluid p-1">
+    <div class="row text-center p-1">
       <div class="col-md-3">
-				<img src="img/about-2.jpg" class="img-fluid">
-        <h5 class="pt-3 pb-3">Lawn Care</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
-			</div>
-		</div>
-	</div>
+        <!-- fas : font awesome web application icons -->
+        <img class="service" src="img/services/service-1.jpg">
+        <h3>Lawn Care</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      </div>
+      <div class="col-md-3">
+        <!-- fas : font awesome web application icons -->
+        <img class="service" src="img/services/service-2.jpg">
+        <h3>Landscape Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      </div>
+      <div class="col-md-3">
+        <!-- fas : font awesome web application icons -->
+        <img class="service" src="img/services/service-3.jpg">
+        <h3>Tree Care</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      </div>
+      <div class="col-md-3">
+        <!-- fas : font awesome web application icons -->
+        <img class="service" src="img/services/service-4.jpg">
+        <h3>Spring & Fall Cleanup</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -86,12 +152,13 @@
 
 
 
-    <!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- Font Awesome Web Application Icons -->
-		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome Web Application Icons -->
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </body>
+
 </html>
