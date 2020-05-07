@@ -159,7 +159,15 @@ target div tag and modify its elements by their classes and/or tags
 }
 
 /* contact section */
-#fuck h1 {
-	font-size: 70px;
-	color: rgba(0,0,0,0.6);
+#contact {
+	background: #f6f6f6;
+}
+#contact .contact-item {
+  margin: 20px 0 40px 0;
+}
+#contact p {
+	color: #777
+}
+#contact hr {
+	color: #ddd;
 }
