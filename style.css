@@ -1,5 +1,4 @@
 /* ceci n'est pas un commantaire */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -15,7 +14,7 @@
 /* document settings */
 
 html, body {
-	font-family: 'Poppins', 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	color: #666;
 	font-weight: 400;
@@ -180,6 +179,11 @@ target div tag and modify its elements by their classes and/or tags
 #contact p {
 	color: #777
 }
-#contact .row hr {
+#contact .row .contact-item hr {
 	color: #ddd;
+}
+
+#contact h3 {
+  font-size: 1em;
+  font-weight: 600;
 }
