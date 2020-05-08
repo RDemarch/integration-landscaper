@@ -3,7 +3,7 @@
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-	
+
 }
 @media (max-width: 768px) {
 
@@ -172,6 +172,7 @@ target div tag and modify its elements by their classes and/or tags
 /* contact section */
 #contact {
 	background: #f6f6f6;
+	background-size: cover;
 }
 #contact .contact-item {
   margin: 20px 0 40px 0;
@@ -179,6 +180,6 @@ target div tag and modify its elements by their classes and/or tags
 #contact p {
 	color: #777
 }
-#contact hr {
+#contact .row hr {
 	color: #ddd;
 }

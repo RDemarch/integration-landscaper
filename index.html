@@ -10,9 +10,6 @@
   <!-- initial-scale-1 : sets the initial zoom level when the page is first loaded by the browser -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <!--
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  -->
   <link rel="stylesheet" type="text/css" href="./bootstrap.css">
   <link type="" rel="stylesheet" href="./style.css">
   <title>Hello, Bootstrap!</title>
@@ -104,7 +101,7 @@
         </div>
         <div class="col-lg-3">
           <div class="about-media">
-            <img src="img/about-1.jpg" alt=" ">
+            <img src="img/about-1.jpg">
           </div>
           <div class="about-desc">
             <h3>Garden Care</h3>
@@ -113,7 +110,7 @@
         </div>
         <div class="col-lg-3">
           <div class="about-media">
-            <img src="img/about-2.jpg" alt=" ">
+            <img src="img/about-2.jpg">
           </div>
           <div class="about-desc">
             <h3>Lawn Care</h3>
@@ -223,57 +220,71 @@
   </div>
 
   <!-- contact section -->
-  <div id="contact">
+  <div id="contact" class="w-100 h-100">
     <div class="container">
       <h1 class="display-5 pt-5 pb-3 text-center">Contact Us</h1>
       <hr>
       <p class="text-center p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-    </div>
-    <div class="contact-info col-md-10 offset-md-1 mb-30">
-      <div class="">
-
-      </div>
-
+      <div class="row">
+        <div class="col-lg-4 contact-item">
           <h3 class="text-center">ADDRESS</h3>
           <hr>
-          <div class="contact-item">
-            <p class="text-center pt-2">4321 California St</p>
-            <p class="text-center">San Francisco, CA 12345</p>
-          </div>
-
-        <div class="col-lg-1">
+          <p class="text-center">4321 California St,</p>
+          <p class="text-center">San Francisco, CA 12345</p>
+        </div>
+        <div class="col-lg-4 contact-item">
           <h3 class="text-center">WORKING HOURS</h3>
           <hr>
-          <div class="contact-item">
-            <p class="text-center pt-2">Monday-Saturday: 07:00 - 18:00</p>
-            <p class="text-center">Sunday: CLOSED</p>
-          </div>
+          <p class="text-center">Monday-Saturday: 07:00 - 18:00</p>
+          <p class="text-center">Sunday: CLOSED</p>
         </div>
-        <div class="col-lg-1">
+        <div class="col-lg-4 contact-item">
           <h3 class="text-center">CONTACT INFO</h3>
           <hr>
-          <div class="contact-item">
-            <p class="text-center pt-2">Phone: +1 123 456 1234</p>
-            <p class="text-center">Email: info@company.com</p>
-          </div>
+          <p class="text-center">Phone: +1 123 456 1234</p>
+          <p class="text-center">Email: info@company.com</p>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- message section -->
+  <div id="message">
+    <div class="container">
+      <h1 class="display-5 pt-5 pb-3 text-center">LEAVE US A MESSAGE</h1>
+      <form>
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom btn-primary">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
 
-
-
+  <!-- footer section -->
+  <footer id="footer">
+    <div class="container">
+      <h1 class="display-5 pt-5 pb-3 text-center">social media section</h1>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <!--
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  -->
   <script type="text/javascript" src="./bootstrap.js">
-  <!-- Font Awesome Web Application Icons -->
+    <!-- Font Awesome Web Application Icons
+    -->
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </body>
 
