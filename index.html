@@ -220,55 +220,76 @@
   </div>
 
   <!-- contact section -->
-  <div id="contact" class="w-100 h-100">
-    <div class="container">
-      <h1 class="display-5 pt-5 pb-3 text-center">Contact Us</h1>
+  <div id="contactSection">
+    <div class="section-title container text-center">
+      <h1>Contact Us</h1>
       <hr>
-      <p class="text-center p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
       <div class="row">
-        <div class="col-lg-4 contact-item">
-          <h3 class="text-center">ADDRESS</h3>
-          <hr>
-          <p class="text-center">4321 California St,</p>
-          <p class="text-center">San Francisco, CA 12345</p>
-        </div>
-        <div class="col-lg-4 contact-item">
-          <h3 class="text-center">WORKING HOURS</h3>
-          <hr>
-          <p class="text-center">Monday-Saturday: 07:00 - 18:00</p>
-          <p class="text-center">Sunday: CLOSED</p>
-        </div>
-        <div class="col-lg-4 contact-item">
-          <h3 class="text-center">CONTACT INFO</h3>
-          <hr>
-          <p class="text-center">Phone: +1 123 456 1234</p>
-          <p class="text-center">Email: info@company.com</p>
-        </div>
-      </div>
-      <h3 class="display-5 pt-3 pb-3 text-center">LEAVE US A MESSAGE</h3>
-      <form>
-        <div class="form-group">
-          <div class="form-row">
-            <div class="offset-md-3 col-3">
-              <input type="text" class="form-control" placeholder="First name" required="required">
+        <div class="col-lg-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+          <div class="row">
+            <div class="contact-item col-lg-4">
+              <h3>Address</h3>
+              <hr class="bg-secondary">
+              <p>4321 California St,</p>
+              <p>San Francisco, CA 12345</p>
             </div>
-            <div class="col-3">
-              <input type="text" class="form-control" placeholder="Last name" required="required">
+            <div class="contact-item col-lg-4">
+              <h3>Working Hours</h3>
+              <hr class="bg-secondary">
+              <p>Monday-Saturday: 07:00 - 18:00</p>
+              <p>Sunday: CLOSED</p>
+            </div>
+            <div class="contact-item col-lg-4">
+              <h3>Contact Info</h3>
+              <hr class="bg-secondary">
+              <p>Phone: +1 123 456 1234</p>
+              <p>Email: info@company.com</p>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <textarea class="form-control offset-md-3 col-6" rows="3" placeholder="Message"></textarea>
+      </div>
+      <!-- contact input -->
+      <form>
+        <div class="section-input text-center">
+          <h5>Leave us a message</h5>
         </div>
-        <button type="submit" class="btn btn-custom btn-primary text-center">SEND MESSAGE</button>
+        <div class="form-row">
+          <div class="offset-lg-3 col-lg-3 p-2">
+            <input type="text" class="form-control" placeholder="First name" required="required">
+          </div>
+          <div class="col-lg-3 p-2">
+            <input type="text" class="form-control" placeholder="Last name" required="required">
+          </div>
+        </div>
+        <div class="form-row pt-2">
+          <div class="offset-lg-3 col-lg-6">
+            <textarea class="form-control" rows="5" placeholder="Message" required="required"></textarea>
+          </div>
+        </div>
+        <div class="submit-message">
+          <button type="submit" class="btn btn-custom btn-primary text-center">Send Message</button>
+        </div>
       </form>
     </div>
   </div>
 
   <!-- footer section -->
-  <footer id="footer">
-    <div class="container">
-      <h1 class="display-5 pt-5 pb-3 text-center">social media section</h1>
+  <footer id="footerSection">
+    <div class="footer-title container text-center">
+      <div class="row">
+        <div class="social-media col-12 p-3">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+  				<a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+  				<a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <!-- add some spacing here -->
+        <div class="copyright col-12">
+          <h5>© 2020 Landscaper. Designed by <span><a href="#">Sergio Núñez Meneses</a></span></h5>
+        </div>
+      </div>
     </div>
   </footer>
 

@@ -179,11 +179,43 @@ target div tag and modify its elements by their classes and/or tags
 #contact p {
 	color: #777
 }
-#contact .row .contact-item hr {
+#contactSection > .contact-item > hr {
 	color: #ddd;
 }
 
 #contact h3 {
   font-size: 1em;
   font-weight: 600;
+}
+
+/* footer section */
+#footerSection {
+	height: 25vh;
+	background-color: #444;
+}
+#footerSection .social-media a {
+	padding: 2.5rem;
+  font-size: 2em;
+	border-radius: 100%;
+	transition: all 0.2s;
+}
+#footerSection .fa-facebook {
+	color: #3b5998;
+	transition: all 0.5s;
+}
+#footerSection .fa-twitter {
+	color: #00aced;
+	transition: all 0.5s;
+}
+#footerSection .fa-google-plus-g {
+	color: #dd4b39;
+	transition: all 0.5s;
+}
+#footerSection .social-media a:hover {
+	font-size: 4.5em;
+	transition: all 0.2s;
+}
+#footerSection .fa-facebook:hover, #footerSection .fa-twitter:hover, #footerSection .fa-google-plus-g:hover {
+  color: #6aaf08;
+  transition: all 0.5s;
 }
