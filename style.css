@@ -129,13 +129,23 @@ target div tag and modify its elements by their classes and/or tags
 }
 
 /* services section */
-#services .service {
-	border-style: solid;
-	border-width: 1em;
-	border-color: #6aaf08;
+#serviceSection {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(106, 175, 8, 0.85);
+	background-size: cover;
+}
+#serviceSection img {
+	width: 60%;
+	height: 50%;
+	border: solid 4px #6aaf08;
+	border-radius: 100%;
 }
 
 /* gallery section */
+#gallerySection img {
+	border: 2px solid #fff;
+}
 
 /* testimonials section */
 #testimonials {
@@ -169,21 +179,21 @@ target div tag and modify its elements by their classes and/or tags
 }
 
 /* contact section */
-#contact {
+#contactSection {
 	background: #f6f6f6;
 	background-size: cover;
 }
-#contact .contact-item {
+#contactSection .contact-item {
   margin: 20px 0 40px 0;
 }
-#contact p {
+#contactSection p {
 	color: #777
 }
 #contactSection > .contact-item > hr {
 	color: #ddd;
 }
 
-#contact h3 {
+#contactSection h3 {
   font-size: 1em;
   font-weight: 600;
 }
