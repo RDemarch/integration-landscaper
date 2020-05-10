@@ -19,57 +19,49 @@
 <!-- data-spy : -->
 <!-- data-target : -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-sticky-top">
-  <!-- nav :  -->
-  <!-- navbar-default :  -->
-  <!-- navbar-fixed-top :  -->
-  <!-- on : -->
-  <nav id="menu" class="navbar navbar-default navbar-sticky-top">
-    <!-- navbar-header : -->
-    <div class="navbar-header">
-      <!-- navbar-toggle : -->
-      <!-- collapse : -->
-      <!-- data-toggle : -->
-      <!-- data-target : -->
-      <button class="navbar-toggle collapse" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toogle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
+  <!-- navbar : creates a navigation bar -->
+  <!-- navbar-expand-* : responsive collapsible class -->
+  <!-- navbar-light : adds black text to all links in the navbar -->
+  <!-- bg-light : adds a light grey background color to an element -->
+  <!-- sticky-top : makes an element stay fixed at the top of the page when you scroll past it -->
+  <nav id="#navbarResponsive" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <!-- container-fluid : spans the full width of the screen -->
+    <div class="container-fluid">
       <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
-      <!-- page-scroll : -->
-      <a class="navbar-brand page-scroll" href="#page-top">Landscaper</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- unordered list -->
-      <!-- nav : -->
-      <!-- navbar-nav : -->
-      <!-- navbar-right : -->
-      <ul class="nav navbar-nav navbar-right">
-        <!-- li : -->
-        <li>
-          <!-- page-scroll : -->
-          <a class="page-scroll" href="#about">ABOUT</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#services">SERVICES</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#gallery">GALLERY</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#testimonials">TESTIMONIALS</a>
-        </li>
-        <li>
-          <a class="page-scroll" href="#contact">CONTACT</a>
-        </li>
-      </ul>
+      <a class="navbar-brand" href="#">Landscaper</a>
+      <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-collapse : collapses the navbar -->
+      <div class="collapse navbar-collapse">
+        <!-- unordered list -->
+        <ul class="navbar-nav ml-auto">
+          <!-- styles list items inside the navbar -->
+          <li class="nav-item">
+            <!-- styles links/anchors inside the navbar -->
+            <a class="nav-link" href="#aboutSection">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#serviceSection">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallerySection">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonialsSection">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- header section-->
-  <header id="header">
+  <header id="headerSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <div class="intro">
       <div class="overlay">
         <div class="container">
@@ -85,8 +77,7 @@
   </header>
 
   <!--- about section -->
-  <!-- create div with id 'about' -->
-  <div id="about">
+  <div id="aboutSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <!-- container : fixed width container with widths determined by screen sites, and equal margin on the left and right -->
     <div class="container">
       <div class="row">
@@ -121,48 +112,31 @@
     </div>
   </div>
 
-  <!-- MAKE ONE SINGLE CONTAINER -->
-  <!--- our services section -->
-  <div class="container-fluid p-1" data-spy="scroll" data-target="#myNav" data-offset="0">
-    <!-- row : container for responsive columns -->
-    <div class="row welcome text-center">
-      <!-- this takes 100% of the screen and all 12 columns -->
-      <div class="col-12">
-        <h1 id="services" class="display-4">Our Services</h1>
-      </div>
+  <!--- services section -->
+  <div id="serviceSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+    <div class="section-title container text-center">
+      <h1 class="pt-2">Our Services</h1>
       <hr class="my-4">
-      <div class="col-12">
-        <!-- lead : increase the font size and line height of a paragraph -->
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit duis sed dapibus leonec.</p>
-      </div>
-    </div>
-  </div>
-
-  <!--- three column section -->
-  <div id="serviceSection">
-    <div class="container-fluid p-1 1">
-      <div class="row text-center p-1 2">
-        <div class="col-md-3">
-          <!-- fas : font awesome web application icons -->
-          <img src="img/services/service-1.jpg" class="img-fluid">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      <!-- row : container for responsive columns -->
+      <div class="row p-1 2">
+        <div class="col-lg-3">
+          <img src="./img/services/service-1.jpg" class="mw-100 mh-50">
           <h3>Lawn Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-md-3">
-          <!-- fas : font awesome web application icons -->
-          <img src="img/services/service-2.jpg" class="img-fluid">
+        <div class="col-lg-3">
+          <img src="./img/services/service-2.jpg" class="mw-100 mh-50">
           <h3>Landscape Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-md-3">
-          <!-- fas : font awesome web application icons -->
-          <img src="img/services/service-3.jpg" class="img-fluid">
+        <div class="col-lg-3">
+          <img src="./img/services/service-3.jpg" class="mw-100 mh-50">
           <h3>Tree Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-md-3">
-          <!-- fas : font awesome web application icons -->
-          <img src="img/services/service-4.jpg" class="img-fluid">
+        <div class="col-lg-3">
+          <img src="./img/services/service-4.jpg" class="mw-100 mh-50">
           <h3>Spring & Fall Cleanup</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
@@ -171,25 +145,30 @@
   </div>
 
   <!-- gallery test -->
-  <div id="gallerySection">
+  <div id="gallerySection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <div class="container text-center">
       <div class="row">
         <div class="col bg-gradient-warning">
           <h2>Gallery Project</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
           <div class="row">
+            <div class="col-xs-2 col-sm-12 col-md-12">
+              <a class="btn btn-custom btn-lg" href="#">All</a>
+              <a class="btn btn-custom btn-lg" href="#">Lawn Care</a>
+              <a class="btn btn-custom btn-lg" href="#">Garden Care</a>
+              <a class="btn btn-custom btn-lg" href="#">Planting</a>
+            </div>
+            <!--
             <div class="col-xs-4 col-sm-6 col-md-3 bg-gradient-success">
-              <h3>All</h3>
+              <a class="btn btn-custom btn-lg" href="#">Lawn Care</a>
             </div>
             <div class="col-xs-4 col-sm-6 col-md-3 bg-gradient-success">
-              <h3>Lawn Care</h3>
+              <a class="btn btn-custom btn-lg" href="#">Garden Care</a>
             </div>
             <div class="col-xs-4 col-sm-6 col-md-3 bg-gradient-success">
-              <h3>Garden Care</h3>
+              <a class="btn btn-custom btn-lg" href="#">Planting</a>
             </div>
-            <div class="col-xs-4 col-sm-6 col-md-3 bg-gradient-success">
-              <h3>Planting</h3>
-            </div>
+            -->
           </div>
         </div>
       </div>
@@ -227,7 +206,7 @@
   </div>
 
   <!-- testimonials section -->
-  <div id="testimonials" class="w-100 h-100">
+  <div id="testimonialsSection" class="w-100 h-100" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <div class="overlay p-5 w-100 h-100">
       <div class="container">
         <h1 class="display-5 pt-5 m-5 text-center">Testimonials</h1>
@@ -277,7 +256,7 @@
   </div>
 
   <!-- contact section -->
-  <div id="contactSection">
+  <div id="contactSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <div class="section-title container text-center">
       <h1>Contact Us</h1>
       <hr class="my-4">
@@ -332,13 +311,13 @@
   </div>
 
   <!-- footer section -->
-  <footer id="footerSection">
+  <footer id="footerSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <div class="footer-title container text-center">
       <div class="row">
         <div class="social-media col-12 p-3">
           <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-  				<a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
-  				<a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+          <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+          <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
         </div>
       </div>
       <div class="row">
@@ -352,7 +331,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./jquery-3.5.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./bootstrap.js"></script>
   <!-- Font Awesome Web Application Icons -->

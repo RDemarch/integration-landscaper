@@ -20,6 +20,7 @@ html, body {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	position: relative;
 }
 hr {
   height: 3px;
@@ -63,24 +64,24 @@ h5 {
 /* navigation bar */
 
 /* header section */
-#header .intro {
+#headerSection .intro {
 	background: url('img/intro-bg.jpg') top center no-repeat;
 	background-size: cover;
 }
-#header .intro .overlay {
+#headerSection .intro .overlay {
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(112, 173, 71, 0.4) 100%); /* (from to, color, color) */
 }
-#header .intro-text {
+#headerSection .intro-text {
 	padding-top: 320px;
 	padding-bottom: 200px;
 }
-#header .intro h1 {
+#headerSection .intro h1 {
   color: #fff;
   font-size: 64px;
   font-weight: 700;
   letter-spacing: -1px;
 }
-#header .intro p {
+#headerSection .intro p {
 	color: #fff;
 	font-size: 22px;
 	line-height: 28px;
@@ -93,37 +94,37 @@ about section :
 target div tag and modify its elements by their classes and/or tags
 
 */
-#about {
+#aboutSection {
 	padding: 120px 0 80px 0;
 	background: #f6f6f6;
 }
-#about h3 {
+#aboutSection h3 {
 	font-size: 22px;
 	font-weight: 600;
 	margin: 20px 0 0 0;
 }
-#about .about-text span {
+#aboutSection .about-text span {
 	color: #70ad47;
 	font-weight: 700;
 	letter-spacing: -1px;
 }
-#about hr {
+#aboutSection hr {
 	margin-left: 0;
 	margin-bottom: 40px;
 }
-#about .btn {
+#aboutSection .btn {
 	margin-top: 40px;
 }
-#about .about-media img {
+#aboutSection .about-media img {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: auto;
 }
-#about .about-text, #about .about-desc {
+#aboutSection .about-text, #aboutSection .about-desc {
 	margin-bottom: 40px;
 }
-#about p {
+#aboutSection p {
 	line-height: 24px;
 	margin-top: 20px;
 }
@@ -132,13 +133,11 @@ target div tag and modify its elements by their classes and/or tags
 #serviceSection {
 	width: 100vw;
 	height: 100vh;
-	background: rgba(106, 175, 8, 0.85);
+	background: rgba(106, 175, 8, 0.8);
 	background-size: cover;
 }
 #serviceSection img {
-	width: 60%;
-	height: 50%;
-	border: solid 4px #6aaf08;
+	border: solid 8px #6aaf08;
 	border-radius: 100%;
 }
 
@@ -148,22 +147,22 @@ target div tag and modify its elements by their classes and/or tags
 }
 
 /* testimonials section */
-#testimonials {
+#testimonialsSection {
 	background: url('img/testimonials-bg.jpg') center center no-repeat fixed;
 	background-size: cover;
 }
-#testimonials .overlay {
+#testimonialsSection .overlay {
   background: rgba(106, 175, 8, 0.85);
 	background-size: cover;
 }
-#testimonials .container > h1 {
+#testimonialsSection .container > h1 {
   color: #fff;
 }
-#testimonials .carousel-inner .carousel-item {
+#testimonialsSection .carousel-inner .carousel-item {
   background: transparent;
   height: 250px;
 }
-#testimonials .carousel-indicators li {
+#testimonialsSection .carousel-indicators li {
 	background-color: #fff;
  	width: 6px;
  	height: 6px;
@@ -172,7 +171,7 @@ target div tag and modify its elements by their classes and/or tags
 	display:inline-block;
 	cursor: pointer;
 }
-#testimonials .carousel-indicators .active {
+#testimonialsSection .carousel-indicators .active {
  	width:6px;
  	height:6px;
  	background-color:#fff
@@ -192,7 +191,6 @@ target div tag and modify its elements by their classes and/or tags
 #contactSection > .contact-item > hr {
 	color: #ddd;
 }
-
 #contactSection h3 {
   font-size: 1em;
   font-weight: 600;
