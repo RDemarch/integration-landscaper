@@ -18,26 +18,21 @@
 
 <!-- data-spy : -->
 <!-- data-target : -->
-<body id="pageTop" data-spy="scroll" data-target="#navbarSection">
 
+<body id="pageTop" data-spy="scroll" data-target="#navbarSection" data-offset="50">
   <!-- navbar : creates a navigation bar -->
   <!-- navbar-expand-* : responsive collapsible class -->
-  <nav id="navbarSection" class="navbar navbar-custom navbar-expand-md fixed-top">
-    <!-- container-fluid : spans the full width of the screen -->
+  <nav id="navbarSection" class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
-      <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
       <a class="navbar-brand" href="#pageTop">Landscaper</a>
-      <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
+      <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon text-dark"></span>
+        <span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span>
       </button>
-      <!-- navbar-collapse : collapses the navbar -->
+      <!-- items -->
       <div id="navbarResponsive" class="collapse navbar-collapse">
-        <!-- unordered list -->
         <ul class="navbar-nav ml-auto">
-          <!-- styles list items inside the navbar -->
-          <li class="nav-item active">
-            <!-- styles links/anchors inside the navbar -->
+          <li class="nav-item">
             <a class="nav-link" href="#aboutSection">About</a>
           </li>
           <li class="nav-item">
@@ -141,7 +136,7 @@
     </div>
   </div>
 
-  <!-- gallery test -->
+  <!-- gallery section -->
   <div id="gallerySection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container text-center">
       <div class="row">
@@ -215,12 +210,12 @@
             <li class="p-1 m-2" data-target="#slides" data-slide-to="2"></li>
             <li class="p-1 m-2" data-target="#slides" data-slide-to="3"></li>
           </ul>
-          <!-- carousel-inner : adds slides to the carousel -->
           <div class="carousel-inner">
-            <!-- carousel-item : specifies the content of each slide -->
+            <!-- adds slides to the carousel -->
             <div class="carousel-item active">
-              <!-- carousel-caption : create a caption for each slide -->
+              <!-- specifies the content of each slide -->
               <div class="carousel-caption">
+                <!-- create a caption for each slide -->
                 <p class="text-center p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam."</p>
                 <p class="text-center">- John DOE, Parker County, TX</p>
               </div>
@@ -239,8 +234,8 @@
             </div>
             <div class="carousel-item">
               <div class="carousel-caption">
-                <!-- blockquote : styles quoted blocks of content from another source -->
                 <blockquote class="blockquote text-center">
+                  <!-- styles quoted blocks of content from another source -->
                   <p class="mt-0 mb-10">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.""</p>
                   <footer class="blockquote-footer mt-0">Jane BOE,<cite title="Source Title">Parker County, TX</cite></footer>
                 </blockquote>
@@ -282,8 +277,8 @@
           </div>
         </div>
       </div>
-      <!-- contact input -->
       <form>
+        <!-- contact input -->
         <div class="section-input text-center">
           <h5>Leave us a message</h5>
         </div>

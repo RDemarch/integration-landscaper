@@ -69,6 +69,16 @@ h5 {
 #navbarSection .nav-item {
   padding-right: 1.3em;
 }
+#navbarSection .navbar-toggler-icon {
+  background-color: #888;
+}
+#navbarSection .navbar-toggler-icon {
+	margin: 0.3125em 0;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
 
 /* header section */
 #headerSection .intro {
