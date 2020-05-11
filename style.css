@@ -1,26 +1,15 @@
 /* ceci n'est pas un commantaire */
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-}
-@media (max-width: 768px) {
-
-}
-@media (max-width: 576px) {
-
-}
+/* default font size : 16px */
 
 /* document settings */
-
 html, body {
 	font-family: 'Open Sans', sans-serif;
-	text-rendering: optimizeLegibility !important;
-	color: #666;
 	font-weight: 400;
-	width: 100% !important;
-	height: 100% !important;
+	text-rendering: optimizeLegibility !important;
+	width: 100vw !important;
+	height: 100vh !important;
 	position: relative;
+	scroll-behavior: smooth;
 }
 hr {
   height: 3px;
@@ -62,14 +51,32 @@ h5 {
 }
 
 /* navigation bar */
+#navbarSection .navbar-brand {
+  font-size: 1.625em;
+  font-weight: 600;
+  color: #eee;
+	padding: 1.1250rem;
+}
+#navbarSection #navbarResponsive .navbar-nav > li > a {
+	color: #ddd;
+	font-weight: 100;
+	font-size: 1.1em !important;
+	padding-right: 1.625em;
+}
+#navbarSection #navbarResponsive .navbar-nav > li > a:hover {
+  color: #6aaf08;
+}
+#navbarSection .nav-item {
+  padding-right: 1.3em;
+}
 
 /* header section */
 #headerSection .intro {
-	background: url('img/intro-bg.jpg') top center no-repeat;
+	background: url('./img/intro-bg.jpg') top center no-repeat;
 	background-size: cover;
 }
 #headerSection .intro .overlay {
-    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(112, 173, 71, 0.4) 100%); /* (from to, color, color) */
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%,rgba(112, 173, 71, 0.4) 100%); /* (from to, color, color)*/
 }
 #headerSection .intro-text {
 	padding-top: 320px;
@@ -88,12 +95,7 @@ h5 {
 	letter-spacing: -1px;
 }
 
-/*
-
-about section :
-target div tag and modify its elements by their classes and/or tags
-
-*/
+/* about section */
 #aboutSection {
 	padding: 120px 0 80px 0;
 	background: #f6f6f6;
@@ -131,6 +133,7 @@ target div tag and modify its elements by their classes and/or tags
 
 /* services section */
 #serviceSection {
+	padding: 120px 0 80px 0;
 	width: 100vw;
 	height: 100vh;
 	background: rgba(106, 175, 8, 0.8);
@@ -142,6 +145,9 @@ target div tag and modify its elements by their classes and/or tags
 }
 
 /* gallery section */
+#gallerySection {
+	padding: 120px 0 80px 0;
+}
 #gallerySection img {
 	border: 2px solid #fff;
 }
@@ -179,6 +185,7 @@ target div tag and modify its elements by their classes and/or tags
 
 /* contact section */
 #contactSection {
+	padding: 120px 0 80px 0;
 	background: #f6f6f6;
 	background-size: cover;
 }
@@ -226,4 +233,15 @@ target div tag and modify its elements by their classes and/or tags
 #footerSection .fa-facebook:hover, #footerSection .fa-twitter:hover, #footerSection .fa-google-plus-g:hover {
   color: #6aaf08;
   transition: all 0.5s;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
 }

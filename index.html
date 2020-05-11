@@ -11,35 +11,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="./bootstrap.css">
-  <link type="" rel="stylesheet" href="./style.css">
+  <!-- custom CSS -->
+  <link type="text/css" rel="stylesheet" href="./style.css">
   <title>Hello, Bootstrap!</title>
 </head>
 
-<!-- width : 1276px and height : 310 -->
 <!-- data-spy : -->
 <!-- data-target : -->
+<body id="pageTop" data-spy="scroll" data-target="#navbarSection">
 
-<body id="page-top" data-spy="scroll" data-target="#navbarResponsive">
   <!-- navbar : creates a navigation bar -->
   <!-- navbar-expand-* : responsive collapsible class -->
-  <!-- navbar-light : adds black text to all links in the navbar -->
-  <!-- bg-light : adds a light grey background color to an element -->
-  <!-- sticky-top : makes an element stay fixed at the top of the page when you scroll past it -->
-  <nav id="#navbarResponsive" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav id="navbarSection" class="navbar navbar-custom navbar-expand-md fixed-top">
     <!-- container-fluid : spans the full width of the screen -->
     <div class="container-fluid">
       <!-- navbar-brand : added to a link or a header inside the navbar to represent a logo or a header -->
-      <a class="navbar-brand" href="#">Landscaper</a>
+      <a class="navbar-brand" href="#pageTop">Landscaper</a>
       <!-- navbar-toggler : styles the button that should open the navbar on small screens -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon text-dark"></span>
       </button>
       <!-- navbar-collapse : collapses the navbar -->
-      <div class="collapse navbar-collapse">
+      <div id="navbarResponsive" class="collapse navbar-collapse">
         <!-- unordered list -->
         <ul class="navbar-nav ml-auto">
           <!-- styles list items inside the navbar -->
-          <li class="nav-item">
+          <li class="nav-item active">
             <!-- styles links/anchors inside the navbar -->
             <a class="nav-link" href="#aboutSection">About</a>
           </li>
@@ -61,7 +58,7 @@
   </nav>
 
   <!-- header section-->
-  <header id="headerSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <header id="headerSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="intro">
       <div class="overlay">
         <div class="container">
@@ -77,7 +74,7 @@
   </header>
 
   <!--- about section -->
-  <div id="aboutSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <div id="aboutSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <!-- container : fixed width container with widths determined by screen sites, and equal margin on the left and right -->
     <div class="container">
       <div class="row">
@@ -88,7 +85,7 @@
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <a class="btn btn-custom btn-lg page-scroll" href="#services">VIEW ALL SERVICES</a>
+          <a class="btn btn-custom btn-lg page-scroll" href="#serviceSection">VIEW ALL SERVICES</a>
         </div>
         <div class="col-lg-3">
           <div class="about-media">
@@ -113,7 +110,7 @@
   </div>
 
   <!--- services section -->
-  <div id="serviceSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <div id="serviceSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="section-title container text-center">
       <h1 class="pt-2">Our Services</h1>
       <hr class="my-4">
@@ -145,10 +142,10 @@
   </div>
 
   <!-- gallery test -->
-  <div id="gallerySection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <div id="gallerySection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container text-center">
       <div class="row">
-        <div class="col bg-gradient-warning">
+        <div class="col">
           <h2>Gallery Project</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
           <div class="row">
@@ -206,7 +203,7 @@
   </div>
 
   <!-- testimonials section -->
-  <div id="testimonialsSection" class="w-100 h-100" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <div id="testimonialsSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="overlay p-5 w-100 h-100">
       <div class="container">
         <h1 class="display-5 pt-5 m-5 text-center">Testimonials</h1>
@@ -256,7 +253,7 @@
   </div>
 
   <!-- contact section -->
-  <div id="contactSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <div id="contactSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="section-title container text-center">
       <h1>Contact Us</h1>
       <hr class="my-4">
@@ -311,7 +308,7 @@
   </div>
 
   <!-- footer section -->
-  <footer id="footerSection" data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+  <footer id="footerSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="footer-title container text-center">
       <div class="row">
         <div class="social-media col-12 p-3">
@@ -336,6 +333,9 @@
   <script type="text/javascript" src="./bootstrap.js"></script>
   <!-- Font Awesome Web Application Icons -->
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script type="text/javascript" src="./script.js">
+
+  </script>
 </body>
 
 </html>
