@@ -49,6 +49,10 @@ h5 {
 	margin-top: 20px;
 	transition: all 0.3s;
 }
+.btn-custom:hover {
+	color: #fff;
+	background-color: #5f9d07;
+}
 
 /* navigation bar */
 #navbarSection .navbar-brand {
@@ -58,51 +62,50 @@ h5 {
 	padding: 1.1250rem;
 }
 #navbarSection #navbarResponsive .navbar-nav > li > a {
-	color: #ddd;
-	font-weight: 100;
-	font-size: 1.1em !important;
 	padding-right: 1.625em;
+	text-transform: uppercase;
+	font-size: 0.9375em;
+	font-weight: 100;
+	color: #ddd;
 }
 #navbarSection #navbarResponsive .navbar-nav > li > a:hover {
   color: #6aaf08;
 }
 #navbarSection .nav-item {
-  padding-right: 1.3em;
+  padding-right: 1.1250em;
 }
 #navbarSection .navbar-toggler-icon {
   background-color: #888;
 }
 #navbarSection .navbar-toggler-icon {
 	margin: 0.3125em 0;
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
+  width: 1.3750em;
+  height: 0.125em;
+  border-radius: 0.0625em;
+	display: block;
 }
 
 /* header section */
-#headerSection .intro {
+#headerSection {
 	background: url('./img/intro-bg.jpg') top center no-repeat;
 	background-size: cover;
 }
-#headerSection .intro .overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%,rgba(112, 173, 71, 0.4) 100%); /* (from to, color, color)*/
+#headerSection .overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%,rgba(112, 173, 71, 0.4) 100%); /* linear-gradient(from to, color, color)*/
 }
 #headerSection .intro-text {
-	padding-top: 320px;
-	padding-bottom: 200px;
+	padding-top: 20em;
+	padding-bottom: 12.5em;
 }
-#headerSection .intro h1 {
-  color: #fff;
-  font-size: 64px;
+#headerSection h1 {
+  text-transform: uppercase;
+  font-size: 4em;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: 0.0225em;
 }
-#headerSection .intro p {
-	color: #fff;
-	font-size: 22px;
-	line-height: 28px;
-	letter-spacing: -1px;
+#headerSection p {
+	font-size: 1.3750em;
+	letter-spacing: 0.0225em;
 }
 
 /* about section */
