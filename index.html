@@ -19,7 +19,7 @@
 <!-- data-spy : -->
 <!-- data-target : -->
 
-<body id="pageTop" data-spy="scroll" data-target="#navbarSection" data-offset="50">
+<body id="pageTop" data-spy="scroll" data-target="#navbarResponsive" data-offset="100">
   <!-- navbar : creates a navigation bar -->
   <!-- navbar-expand-* : responsive collapsible class -->
   <nav id="navbarSection" class="navbar navbar-expand-md fixed-top">
@@ -32,8 +32,8 @@
       <!-- items -->
       <div id="navbarResponsive" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutSection">About</a>
+          <li class="nav-item active">
+            <a id="aboutLink" class="nav-link" href="#aboutSection">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#serviceSection">Services</a>
@@ -56,12 +56,13 @@
   <header id="headerSection" class="vw-100 vh-110 text-center" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="overlay">
       <div class="container">
+        <!-- row : container for responsive columns -->
         <div class="row">
           <div class="intro-text col-xl-12">
             <h1 class="text-white text-uppercase">Landscaping Services</h1>
-            <p class="text-white font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="text-white font-weight-light">Duis sed dapibus leo nec ornare diam.</p>
-            <a class="btn btn-custom btn-lg" href="#aboutSection">More Info</a>
+            <p class="text-white font-weight-light display-1 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-white font-weight-light display-1 m-1">Duis sed dapibus leo nec ornare diam.</p>
+            <a class="btn-custom btn btn-lg" href="#aboutSection">More Info</a>
           </div>
         </div>
       </div>
@@ -76,28 +77,28 @@
         <div class="col-lg-6">
           <div class="about-text">
             <h2>Welcome to <span>Landscaper</span></h2>
+            <hr class="my-4">
+            <p class="text-black-50 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <p class="text-black-50 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <a class="btn-custom btn btn-lg" href="#serviceSection">View All Services</a>
           </div>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <a class="btn btn-custom btn-lg page-scroll" href="#serviceSection">VIEW ALL SERVICES</a>
         </div>
         <div class="col-lg-3">
           <div class="about-media">
-            <img src="img/about-1.jpg">
+            <img src="./img/about-1.jpg">
           </div>
           <div class="about-desc">
             <h3>Garden Care</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+            <p class="text-black-50 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="about-media">
-            <img src="img/about-2.jpg">
+            <img src="./img/about-2.jpg">
           </div>
           <div class="about-desc">
             <h3>Lawn Care</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
+            <p class="text-black-50 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
           </div>
         </div>
       </div>
@@ -106,30 +107,29 @@
 
   <!--- services section -->
   <div id="serviceSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="section-title container text-center">
-      <h1 class="pt-2">Our Services</h1>
+    <div class="container text-white text-center">
+      <h1>Our Services</h1>
       <hr class="my-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-      <!-- row : container for responsive columns -->
-      <div class="row p-1 2">
+      <div class="row pt-5">
         <div class="col-lg-3">
-          <img src="./img/services/service-1.jpg" class="mw-100 mh-50">
-          <h3>Lawn Care</h3>
+          <img src="./img/services/service-1.jpg" class="img-fluid">
+          <h3 class="text-white pt-4">Lawn Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./img/services/service-2.jpg" class="mw-100 mh-50">
-          <h3>Landscape Design</h3>
+          <img src="./img/services/service-2.jpg" class="img-fluid">
+          <h3 class="text-white pt-4">Landscape Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./img/services/service-3.jpg" class="mw-100 mh-50">
-          <h3>Tree Care</h3>
+          <img src="./img/services/service-3.jpg" class="img-fluid">
+          <h3 class="text-white pt-4">Tree Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./img/services/service-4.jpg" class="mw-100 mh-50">
-          <h3>Spring & Fall Cleanup</h3>
+          <img src="./img/services/service-4.jpg" class="img-fluid">
+          <h3 class="text-white pt-4">Spring & Fall Cleanup</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
       </div>
@@ -145,10 +145,10 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
           <div class="row">
             <div class="col-xs-2 col-sm-12 col-md-12">
-              <a class="btn btn-custom btn-lg" href="#">All</a>
-              <a class="btn btn-custom btn-lg" href="#">Lawn Care</a>
-              <a class="btn btn-custom btn-lg" href="#">Garden Care</a>
-              <a class="btn btn-custom btn-lg" href="#">Planting</a>
+              <a class="btn-custom btn btn-lg" href="#">All</a>
+              <a class="btn-custom btn btn-lg" href="#">Lawn Care</a>
+              <a class="btn-custom btn btn-lg" href="#">Garden Care</a>
+              <a class="btn-custom btn btn-lg" href="#">Planting</a>
             </div>
             <!--
             <div class="col-xs-4 col-sm-6 col-md-3 bg-gradient-success">
