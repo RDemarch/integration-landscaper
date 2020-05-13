@@ -12,7 +12,6 @@ html, body {
 	scroll-behavior: smooth;
 }
 h2 {
-
 	font-weight: normal;
 	font-size: 2.25em; /* 36px */
 	color: #333;
@@ -60,10 +59,20 @@ hr {
   font-size: 1.625em;
   font-weight: 580;
   color: #eee;
-	padding: 1.1250rem;
+	padding: 1.1250em;
 }
-#navbarResponsive {
-	position: relative;
+#navbarSection .navbar-toggler {
+	border: 0.0625em solid #eee;
+	border-radius: 0;
+}
+#navbarSection .navbar-toggler-icon {
+  background-color: #888;
+	margin: 0.3125em 0;
+  width: 1.3750em;
+  height: 0.125em;
+	border: 0.0625em solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.0625em;
+	display: block;
 }
 #navbarSection #navbarResponsive .navbar-nav > li > a {
 	padding-right: 1.625em;
@@ -75,18 +84,11 @@ hr {
 #navbarSection #navbarResponsive .navbar-nav > li > a:hover {
   color: #6aaf08;
 }
-#navbarSection .nav-item {
+#navbarSection #navbarResponsive .nav-item {
   padding-right: 1.1250em;
 }
-#navbarSection .navbar-toggler-icon {
-  background-color: #888;
-}
-#navbarSection .navbar-toggler-icon {
-	margin: 0.3125em 0;
-  width: 1.3750em;
-  height: 0.125em;
-  border-radius: 0.0625em;
-	display: block;
+#navbarSection #navbarResponsive .nav-item .active {
+  color: #6aaf08;
 }
 
 /* header section */
@@ -97,9 +99,9 @@ hr {
 #headerSection .overlay {
   background: linear-gradient(rgba(0, 0, 0, 0.6) 0%,rgba(112, 173, 71, 0.4) 100%); /* linear-gradient(from to, color, color)*/
 }
-#headerSection .intro-text {
-	padding-top: 20em;
-	padding-bottom: 12.5em;
+#headerSection .btn-custom {
+  border-top: 0.0625em solid rgba(255,255,255,0.4); /* 1px */
+  border-bottom: 0.0625em solid rgba(255,255,255,0.4);
 }
 #headerSection h1 {
   text-transform: uppercase;
@@ -111,32 +113,15 @@ hr {
 	font-size: 1.3750em;
 	letter-spacing: 0.03125em;
 }
-#headerSection .btn-custom {
-    border-top: 0.0625em solid rgba(255,255,255,0.4);
-    border-bottom: 0.0625em solid rgba(255,255,255,0.4);
+#headerSection .intro-text {
+	padding-top: 20em;
+	padding-bottom: 12.5em;
 }
 
 /* about section */
 #aboutSection {
 	padding: 7.5em 0 5em 0; /* 120px 80px */
-	background: #f6f6f6;
-}
-#aboutSection span {
-	font-weight: 700;
-	letter-spacing: 0.0125em; /* 0.2px */
-	color: #70ad47;
-}
-#aboutSection hr {
-	margin-left: 0;
-	margin-bottom: 40px;
-}
-#aboutSection h3 {
-	font-size: 1.3750em;
-	font-weight: 500;
-	margin: 1.25em 0 0 0;
-}
-#aboutSection .btn {
-	margin-top: 2.5em;
+	background-color: #f6f6f6;
 }
 #aboutSection .about-media img {
 	width: 100%;
@@ -144,25 +129,36 @@ hr {
 	position: relative;
 	display: block;
 }
-#aboutSection .about-text, #aboutSection .about-desc {
-	margin-bottom: 2.5em;
+#aboutSection .btn {
+	margin-top: 2.5em;
+}
+#aboutSection hr {
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+#aboutSection span {
+	font-weight: 700;
+	letter-spacing: 0.0125em; /* 0.2px */
+	color: #70ad47;
+}
+#aboutSection h3 {
+	font-size: 1.3750em;
+	font-weight: 500;
+	margin: 1.25em 0 0 0;
 }
 #aboutSection p {
 	font-size: 0.9375em; /* 15px */
 	margin-top: 1.250em; /* 20px */
 }
+#aboutSection .about-text, #aboutSection .about-desc {
+	margin-bottom: 2.5em;
+}
 
 /* services section */
 #serviceSection {
 	padding: 7.5em 0 10em 0; /* 120px 160px */
-	background: #6aaf08;
+	background-color: #6aaf08;
 	background-size: cover;
-}
-#serviceSection hr {
-	background: rgba(255,255,255,0.6);
-}
-#serviceSection .container > p {
-	font-size: 1.250em;
 }
 #serviceSection img {
 	width: 14.0625em; /* 225px */
@@ -170,19 +166,105 @@ hr {
 	border-radius: 100%;
 	border: 0.6250em solid rgba(255,255,255,0.1);
 }
+#serviceSection hr {
+	padding: 0;
+	background: rgba(255,255,255,0.6);
+}
+#serviceSection h1 {
+	font-weight: 500;
+	font-size: 2.3em;
+}
 #serviceSection h3 {
 	font-size: 1.5em; /* 24px */
 }
 #serviceSection p {
-	letter-spacing: 0.0125em;
+	padding-top: 0.3125em; /* 5px */
+	letter-spacing: 0.0125em; /* 2px */
+}
+#serviceSection .container > p {
+	font-size: 1.250em;
 }
 
 /* gallery section */
 #gallerySection {
+	background-color: #f6f6f6;
 	padding: 7.5em 0 5em 0; /* 120px 80px */
 }
 #gallerySection img {
-	border: 2px solid #fff;
+	padding-top: 1.1875em; /* 19px */
+}
+/* hover media */
+#gallerySection .gallery-item .hover-media {
+	overflow: hidden;
+	position: relative;
+	margin: 0	auto;
+}
+/* hover text */
+#gallerySection .gallery-item .hover-media .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: #000;
+  padding: 30% 0 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#gallerySection .gallery-item .hover-media .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#gallerySection .gallery-item .hover-image:hover .hover-text {
+  opacity: 1;
+}
+/* hover test 2 */
+#gallerySection .item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#gallerySection .item:hover .overlay {
+  opacity: 1;
+}
+#gallerySection .text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+}
+/*  */
+#gallerySection h2 {
+	font-weight: 600;
+}
+#gallerySection p {
+	font-size: 1.250em;
+}
+#gallerySection .btn {
+	padding: 0.5em; /* 8px */
+	margin: 0.625em 0.625em 0 0.625em; /* 10px */
+	background-color: #e6e6e6;
+	color: #555;
+}
+#gallerySection .btn-custom .active {
+	background-color: #6aaf08;
+	color: #fff;
+}
+#gallerySection .btn:hover {
+	background-color: #6aaf08;
+	color: #fff;
 }
 
 /* testimonials section */
@@ -239,13 +321,13 @@ hr {
 /* footer section */
 #footerSection {
 	height: 25vh;
-	background-color: #444;
+	background-color: #333;
 }
 #footerSection .social-media a {
 	padding: 2.5rem;
   font-size: 2em;
 	border-radius: 100%;
-	transition: all 0.2s;
+	transition: all 0.5s;
 }
 #footerSection .fa-facebook {
 	color: #3b5998;
@@ -261,7 +343,7 @@ hr {
 }
 #footerSection .social-media a:hover {
 	font-size: 4.5em;
-	transition: all 0.2s;
+	transition: all 0.5s;
 }
 #footerSection .fa-facebook:hover, #footerSection .fa-twitter:hover, #footerSection .fa-google-plus-g:hover {
   color: #6aaf08;
