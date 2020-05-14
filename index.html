@@ -3,7 +3,6 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <!-- viewport : user's visible area of a web page -->
   <!-- device-width : sets the width of the page to follow the screen-width of the device -->
@@ -18,7 +17,6 @@
 
 <!-- data-spy : -->
 <!-- data-target : -->
-
 <body id="pageTop" data-spy="scroll" data-target="#navbarResponsive" data-offset="100">
   <!-- navbar : creates a navigation bar -->
   <!-- navbar-expand-* : responsive collapsible class -->
@@ -52,7 +50,7 @@
     </div>
   </nav>
 
-  <!-- header section-->
+  <!-- header section -->
   <header id="headerSection" class="vw-100 vh-110 text-center" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="overlay">
       <div class="container">
@@ -69,7 +67,7 @@
     </div>
   </header>
 
-  <!--- about section -->
+  <!-- about section -->
   <div id="aboutSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <!-- container : fixed width container with widths determined by screen sites, and equal margin on the left and right -->
     <div class="container">
@@ -107,7 +105,7 @@
     </div>
   </div>
 
-  <!--- services section -->
+  <!-- services section -->
   <div id="serviceSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container text-white text-center">
       <h1>Our Services</h1>
@@ -147,17 +145,17 @@
           <hr class="my-4">
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
           <div class="row">
-            <div class="col-xs-2 col-sm-12 col-md-12 pt-2">
-              <a id="allBtn" class="btn-custom btn btn-lg">All</a>
-              <a id="lawnCareBtn" class="btn-custom btn btn-lg">Lawn Care</a>
-              <a id="gardenCareBtn" class="btn-custom btn btn-lg">Garden Care</a>
-              <a id="plantingBtn" class="btn-custom btn btn-lg">Planting</a>
+            <div class="buttons col-xs-2 col-sm-12 col-md-12 pt-2">
+              <button id="allBtn" class="btn-custom btn btn-lg active">All</button>
+              <button id="lawnCareBtn" class="btn-custom btn btn-lg">Lawn Care</button>
+              <button id="gardenCareBtn" class="btn-custom btn btn-lg">Garden Care</button>
+              <button id="plantingBtn" class="btn-custom btn btn-lg">Planting</button>
             </div>
           </div>
         </div>
       </div>
       <div class="row pt-5">
-        <div id="photo1" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/01-large.jpg" title="Photo #1">
               <div class="hover-item">
@@ -167,7 +165,7 @@
             </a>
           </div>
         </div>
-        <div id="photo2" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/02-large.jpg" title="Photo #2">
               <div class="hover-item">
@@ -177,7 +175,7 @@
             </a>
           </div>
         </div>
-        <div id="photo3" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/03-large.jpg" title="Photo #3">
               <div class="hover-item">
@@ -187,7 +185,7 @@
             </a>
           </div>
         </div>
-        <div id="photo4" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/04-large.jpg" title="Photo #4">
               <div class="hover-item">
@@ -197,7 +195,7 @@
             </a>
           </div>
         </div>
-        <div id="photo5" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/05-large.jpg" title="Photo #5">
               <div class="hover-item">
@@ -207,7 +205,7 @@
             </a>
           </div>
         </div>
-        <div id="photo6" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv gardenCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/06-large.jpg" title="Photo #6">
               <div class="hover-item">
@@ -217,7 +215,7 @@
             </a>
           </div>
         </div>
-        <div id="photo7" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv gardenCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/07-large.jpg" title="Photo #7">
               <div class="hover-item">
@@ -227,7 +225,7 @@
             </a>
           </div>
         </div>
-        <div id="photo8" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/08-large.jpg" title="Photo #8">
               <div class="hover-item">
@@ -237,7 +235,7 @@
             </a>
           </div>
         </div>
-        <div id="photo9" class="col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting col-xs-1 col-sm-6 col-lg-4">
           <div class="gallery-item">
             <a href="./img/portfolio/09-large.jpg" title="Photo #9">
               <div class="hover-item">
@@ -247,30 +245,16 @@
             </a>
           </div>
         </div>
-        <!--
-        <div class="col-xs-1 col-sm-6 col-lg-4">
-          <div class="gallery-item">
-            <div class="hover-media">
-              <a href="./img/portfolio/01-large.jpg" title="Project Title">
-                <div class="hover-text">
-                  <h4>Lorem Ipsum</h4>
-                </div>
-                <img src="./img/portfolio/01-small.jpg" class="img-fluid rounded">
-              </a>
-            </div>
-          </div>
-        </div>
-      -->
       </div>
     </div>
   </div>
 
   <!-- testimonials section -->
-  <div id="testimonialsSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <div id="testimonialSection" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="overlay p-5 w-100 h-100">
       <div class="container">
-        <h1 class="display-5 pt-5 m-5 text-center">Testimonials</h1>
-        <hr>
+        <h1 class="pt-5 text-center">Testimonials</h1>
+        <hr class="my-4">
         <div id="slides" class="carousel slide" data-ride="carousel" data-interval="2000">
           <ul class="carousel-indicators">
             <li class="p-1 m-2" data-target="#slides" data-slide-to="0" class="active"></li>

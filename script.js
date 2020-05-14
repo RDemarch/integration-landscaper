@@ -6,61 +6,42 @@ const lawnCareButton = document.getElementById("lawnCareBtn");
 const gardenCareButton = document.getElementById("gardenCareBtn");
 const plantingButton = document.getElementById("plantingBtn");
 
-const allPhotos = ["photo1", "photo2", "photo3", "photo4", "photo5", "photo6", "photo7", "photo8", "photo9"];
-const lawnCarePhotos = ["photo1",
-"photo3", "photo4", "photo8"];
-const gardenCarePhotos = ["photo6", "photo7"];
-const plantingPhotos = ["photo2", "photo5", "photo9"];
-
 /* functions */
 
-/* show/hide gallery photos */
-function showHideAll() {
-  for (var i = 0; i < allPhotos.length; i++) {
-    let allGallery = document.getElementById(allPhotos[i]);
-    allGallery.style.display = "block";
-    /*
-    if (photos.style.display === "none") {
-      photos.style.display = "block";
-      photos.style.transition = "all 0.5s";
-    } else {
-      photos.style.display = "none";
-    }
-    */
-  }
-};
-function showHideLawnCare() {
-  for (var i = 0; i < lawnCarePhotos.length; i++) {
-    let lawnCareGallery = document.getElementById(lawnCarePhotos[i]);
-    let allGallery = document.getElementById(allPhotos[i]);
-    if (lawnCarePhotos[i] == allPhotos[i]) {
-      lawnCareGallery.style.display = "block";
-    } else {
-      allGallery.style.display = "none";
+/* show gallery photos */
+filterSelection("all");
+
+// Show filtered elements
+function addClass(element, name) {
+  var arr1 = element.className.split(" ");
+  var arr2 = name.split(" ");
+  for (var i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
     }
   }
 };
-function showHidegardenCare() {
-  for (var i = 0; i < gardenCarePhotos.length; i++) {
-    let photos = document.getElementById(gardenCarePhotos[i]);
-    if (photos.style.display === "none") {
-      photos.style.display = "block";
-      photos.style.transition = "all 0.5s";
-    } else {
-      photos.style.display = "none";
-      photos.style.transition = "all 0.5s";
+// Hide elements that are not selected
+function removeClass(element, name) {
+  var arr1 = element.className.split(" ");
+  var arr2 = name.split(" ");
+  for (var i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
+  element.className = arr1.join(" ");
 };
-function showHidePlanting() {
-  for (var i = 0; i < plantingPhotos.length; i++) {
-    let photos = document.getElementById(plantingPhotos[i]);
-    if (photos.style.display === "none") {
-      photos.style.display = "block";
-      photos.style.transition = "all 0.5s";
-    } else {
-      photos.style.display = "none";
-      photos.style.transition = "all 0.5s";
+// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+function filterSelection(c) {
+  var x = document.getElementsByClassName("filterDiv");
+  if (c == "all") {
+    c = "";
+  }
+  for (var i = 0; i < x.length; i++) {
+    removeClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      addClass(x[i], "show");
     }
   }
 };
@@ -80,7 +61,16 @@ window.addEventListener("scroll", function(e) {
 });
 
 /* gallery project buttons */
-allButton.addEventListener("click", showHideAll);
-lawnCareButton.addEventListener("click", showHideLawnCare);
-gardenCareButton.addEventListener("click", showHidegardenCare);
-plantingButton.addEventListener("click", showHidePlanting);
+
+allButton.addEventListener("click", function() {
+  filterSelection("all");
+});
+lawnCareButton.addEventListener("click", function() {
+  filterSelection("lawnCare");
+});
+gardenCareButton.addEventListener("click", function() {
+  filterSelection("gardenCare");
+});
+plantingButton.addEventListener("click", function() {
+  filterSelection("planting");
+});

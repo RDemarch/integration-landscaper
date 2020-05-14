@@ -59,7 +59,7 @@ hr {
   font-size: 1.625em;
   font-weight: 580;
   color: #eee;
-	padding: 1.1250em;
+	padding: 0.75em 0;
 }
 #navbarSection .navbar-toggler {
 	border: 0.0625em solid #eee;
@@ -193,6 +193,18 @@ hr {
 #gallerySection img {
 	padding-top: 1.1875em; /* 19px */
 }
+#gallerySection .filterDiv {
+  display: none; /* hidden by default */
+}
+#gallerySection .show { /* class "show" is added to the filtered elements */
+  display: block;
+}
+#gallerySection .hidden {
+  display: none;
+}
+#gallerySection .visuallyHidden {
+  opacity: 0;
+}
 #gallerySection .gallery-item .hover-item {
 	background-color: rgba(0, 0, 0, 0.6);
 	opacity: 0;
@@ -214,56 +226,56 @@ hr {
   color: #fff;
   position: absolute;
 }
+#gallerySection .btn-custom {
+	padding: 0.5em; /* 8px */
+	margin: 0.625em 0.625em 0 0.625em; /* 10px */
+	background-color: #e6e6e6;
+	color: #555;
+}
+#gallerySection .btn-custom:hover, #gallerySection .btn-custom .active, {
+	background-color: #6aaf08;
+	color: #fff;
+}
 #gallerySection h2 {
 	font-weight: 600;
 }
 #gallerySection p {
 	font-size: 1.250em;
 }
-#gallerySection .btn {
-	padding: 0.5em; /* 8px */
-	margin: 0.625em 0.625em 0 0.625em; /* 10px */
-	background-color: #e6e6e6;
-	color: #555;
-}
-#gallerySection .btn-custom .active {
-	background-color: #6aaf08;
-	color: #fff;
-}
-#gallerySection .btn:hover {
-	background-color: #6aaf08;
-	color: #fff;
-}
 
 /* testimonials section */
-#testimonialsSection {
+#testimonialSection {
 	background: url('img/testimonials-bg.jpg') center center no-repeat fixed;
 	background-size: cover;
 }
-#testimonialsSection .overlay {
+#testimonialSection .overlay {
   background: rgba(106, 175, 8, 0.85);
 	background-size: cover;
 }
-#testimonialsSection .container > h1 {
-  color: #fff;
-}
-#testimonialsSection .carousel-inner .carousel-item {
+#testimonialSection .carousel-inner .carousel-item {
   background: transparent;
-  height: 250px;
+  height: 15.625em; /* 250px */
 }
-#testimonialsSection .carousel-indicators li {
+#testimonialSection .carousel-indicators li {
 	background-color: #fff;
- 	width: 6px;
- 	height: 6px;
- 	border: 1px solid #70ad47;
+ 	width: 0.25em;
+ 	height: 0.25em;
+ 	border: 0.0625em solid #70ad47;
  	border-radius: 100%;
 	display:inline-block;
 	cursor: pointer;
 }
-#testimonialsSection .carousel-indicators .active {
- 	width:6px;
- 	height:6px;
+#testimonialSection .carousel-indicators .active {
+ 	width: 0.25em;
+ 	height: 0.25em;
  	background-color:#fff
+}
+#testimonialSection hr {
+	padding: 0;
+	background: rgba(255,255,255,0.6);
+}
+#testimonialSection .container > h1 {
+  color: #fff;
 }
 
 /* contact section */
@@ -301,7 +313,7 @@ hr {
 	color: #6aaf08;
 }
 #footerSection .social-media a:hover {
-	font-size: 4em; /* 64px */
+	font-size: 3.375em; /* 54px */
 	transition: all 0.3s;
 }
 #footerSection .fa-facebook:hover {
