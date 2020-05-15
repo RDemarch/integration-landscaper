@@ -1,7 +1,36 @@
-/* ceci n'est pas un commantaire */
 /* default font size : 16px 0.0625em */
+/* bootstrap size ranges : 0.25rem to 3rem (4px 48px) */
 
-/* document settings */
+/*
+extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/* MEDIA QUERIES */
+/* at-rules css statements */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+/* DOCUMENT SETTINGS */
 html, body {
 	width: 100vw !important;
 	height: 100vh !important;
@@ -17,18 +46,18 @@ h2 {
 	color: #333;
 }
 h3, h4 {
-	font-size: 1.250em;
+	font-size: 1.25em; /* 20px */
 	font-weight: 400;
 	color: #333;
 }
 h5 {
 	text-transform: uppercase;
 	font-weight: 700;
-	line-height: 1.250em;
+	line-height: 1.25em; /* 20px */
 }
 hr {
-  height: 0.1875em;
-  width: 4.375em;
+  height: 0.1875em; /* 3px */
+  width: 4.375em; /* 70px */
   text-align: center;
   position: relative;
   background: #6aaf08;
@@ -38,13 +67,13 @@ hr {
 
 /* button customization */
 .btn-custom {
-	padding: 0.8750em 1.250em;
-	margin-top: 1.250em;
-	border-radius:0.3750em;
+	padding: 0.875em 1.25em;
+	margin-top: 1.25em;
+	border-radius:0.375em;
 	text-transform: uppercase;
-	font-size: 1.0625em;
+	font-size: 1.0625em; /* 17px */
 	font-weight: 400;
-	letter-spacing: 0.0625em;
+	letter-spacing: 0.0625em; /* 1px */
 	color: #fff;
 	background-color: #6aaf08;
 	transition: all 0.3s;
@@ -54,7 +83,7 @@ hr {
 	color: #fff;
 }
 
-/* navbar section */
+/* NAVBAR SECTION */
 #navbarSection .navbar-brand {
   font-size: 1.625em;
   font-weight: 580;
@@ -91,7 +120,7 @@ hr {
   color: #6aaf08;
 }
 
-/* header section */
+/* HEADER SECTION */
 #headerSection {
 	background: url('./img/intro-bg.jpg') top center no-repeat;
 	background-size: cover;
@@ -118,7 +147,7 @@ hr {
 	padding-bottom: 12.5em;
 }
 
-/* about section */
+/* ABOUT SECTION */
 #aboutSection {
 	padding: 7.5em 0 5em 0; /* 120px 80px */
 	background-color: #f6f6f6;
@@ -143,7 +172,7 @@ hr {
 }
 #aboutSection h3 {
 	font-size: 1.3750em;
-	font-weight: 500;
+	font-weight: 600;
 	margin: 1.25em 0 0 0;
 }
 #aboutSection p {
@@ -154,7 +183,7 @@ hr {
 	margin-bottom: 2.5em;
 }
 
-/* services section */
+/* SERVICES SECTION */
 #serviceSection {
 	padding: 7.5em 0 10em 0; /* 120px 160px */
 	background-color: #6aaf08;
@@ -185,7 +214,7 @@ hr {
 	font-size: 1.250em;
 }
 
-/* gallery section */
+/* GALLERY SECTION */
 #gallerySection {
 	background-color: #f6f6f6;
 	padding: 7.5em 0 5em 0; /* 120px 80px */
@@ -198,9 +227,6 @@ hr {
 }
 #gallerySection .show { /* class "show" is added to the filtered elements */
   display: block;
-}
-#gallerySection .hidden {
-  display: none;
 }
 #gallerySection .visuallyHidden {
   opacity: 0;
@@ -232,7 +258,11 @@ hr {
 	background-color: #e6e6e6;
 	color: #555;
 }
-#gallerySection .btn-custom:hover, #gallerySection .btn-custom .active, {
+#gallerySection .btn-custom:hover {
+	background-color: #6aaf08;
+	color: #fff;
+}
+#gallerySection .active {
 	background-color: #6aaf08;
 	color: #fff;
 }
@@ -243,27 +273,26 @@ hr {
 	font-size: 1.250em;
 }
 
-/* testimonials section */
+/* TESTIMONIALS SECTION */
 #testimonialSection {
 	background: url('img/testimonials-bg.jpg') center center no-repeat fixed;
 	background-size: cover;
 }
 #testimonialSection .overlay {
+	padding: 7.5em 0; /* 120px */
   background: rgba(106, 175, 8, 0.85);
 	background-size: cover;
 }
 #testimonialSection .carousel-inner .carousel-item {
-  background: transparent;
-  height: 15.625em; /* 250px */
+	height: 9.375em; /* 150px */
 }
 #testimonialSection .carousel-indicators li {
-	background-color: #fff;
- 	width: 0.25em;
+ 	width: 0.25em; /* 4px */
  	height: 0.25em;
  	border: 0.0625em solid #70ad47;
  	border-radius: 100%;
-	display:inline-block;
-	cursor: pointer;
+	background-color: #fff;
+	display: inline-block;
 }
 #testimonialSection .carousel-indicators .active {
  	width: 0.25em;
@@ -271,49 +300,83 @@ hr {
  	background-color:#fff
 }
 #testimonialSection hr {
-	padding: 0;
 	background: rgba(255,255,255,0.6);
 }
 #testimonialSection .container > h1 {
+	font-size: 2.3em;
+	font-weight: 500;
+  color: #fff;
+}
+#testimonialSection .carousel-item > p {
+	font-size: 1.1875em; /* 19px */
+	font-weight: 500;
   color: #fff;
 }
 
-/* contact section */
+/* CONTACT SECTION */
 #contactSection {
-	padding: 120px 0 80px 0;
+	padding: 7.5em 0 1em 0; /* 120px 16px */
 	background: #f6f6f6;
 	background-size: cover;
 }
+#contactSection .section-title {
+	margin-bottom: 4.375em;
+}
 #contactSection .contact-item {
-  margin: 20px 0 40px 0;
+  margin: 3.375em 0; /* 54px */
 }
-#contactSection p {
-	color: #777
+#contactSection #subtitle {
+	font-size: ;
 }
-#contactSection > .contact-item > hr {
-	color: #ddd;
+#contactSection .contact-item hr {
+	background: #ddd;
 }
-#contactSection h3 {
-  font-size: 1em;
+#contactSection .section-input {
+	padding-bottom: 0.625em;
+}
+#contactSection .form-control {
+	border-radius: 0;
+}
+#contactSection .form-control:focus {
+	box-shadow: 0 0 0.9375em #6aaf08;
+	border-color: #ddd;
+}
+#contactSection .section-input #email {
+	width: 400px;
+	margin-left: 200px;
+}
+#contactSection h2 {
   font-weight: 600;
 }
+#contactSection h3 {
+  font-size: 1.0625em;
+  font-weight: 600;
+	text-transform: uppercase;
+}
+#contactSection p {
+	font-size: ;
+	color: #777;
+}
 
-/* footer section */
+/* FOOTER SECTION */
 #footerSection {
-	height: 25vh;
+	padding: 2.5em 0 1.5em 0; /* 40px 24px */
 	background-color: #333;
 }
 #footerSection .social-media a {
-	padding: 2rem; /* 32px */
-  font-size: 2em;
+	padding: 0.1875em; /* 3px */
+	margin: 0 2em; /* 32px */
+  font-size: 1.1875em; /* 30px */
+	border: 0.5em solid #444;
 	border-radius: 100%;
+	background: #444;
 	transition: all 0.5s;
 }
 #footerSection .fa-facebook, #footerSection .fa-twitter, #footerSection .fa-google-plus-g {
 	color: #6aaf08;
 }
 #footerSection .social-media a:hover {
-	font-size: 3.375em; /* 54px */
+	font-size: 1.75em; /* 28px */
 	transition: all 0.3s;
 }
 #footerSection .fa-facebook:hover {
@@ -327,4 +390,15 @@ hr {
 #footerSection .fa-google-plus-g:hover {
 	color: #dd4b39;
   transition: all 0.5s;
+}
+#footerSection .copyright p {
+  color: #666;
+  font-size: 0.9375em; /* 15px */
+}
+#footerSection .copyright a {
+	color: #888;
+}
+#footerSection .copyright a:hover {
+	text-decoration: none;
+	color: #ccc;
 }
