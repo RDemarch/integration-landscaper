@@ -40,6 +40,9 @@ hr {
 	background-color: #5f9d07;
 	color: #FFFFFF;
 }
+.btn-custom:focus {
+	box-shadow: 0 0 0.375em rgba(255,255,255,0.1);
+}
 
 /* NAVBAR SECTION */
 #navbarSection .navbar-brand {
@@ -128,6 +131,12 @@ hr {
 #gallerySection {
 	background: #F5F5F5;
 }
+#gallerySection h1 {
+	font-size: calc(1em + 0.5vw); /* 16px */
+}
+#gallerySection h6 {
+	font-size: calc(0.375em + 0.5vw); /* 6px */
+}
 /* filter elements with JS */
 #gallerySection .filterDiv {
   display: none; /* hidden by default */
@@ -169,13 +178,8 @@ hr {
   color: #FFFFFF;
   position: relative;
 }
-/* ------- */
-#gallerySection h1 {
-	font-size: calc(1em + 0.5vw); /* 16px */
-}
-#gallerySection h6 {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
-}
+/* modal */
+
 
 /* TESTIMONIALS SECTION */
 #testimonialSection {
@@ -264,7 +268,7 @@ hr {
   font-size: calc(0.8125em + 0.5vw); /* 13px */
 	color: #6aaf08;
 	/* border-radius: 50%; */
-	background-color: #fff;
+	/* background-color: #fff; */
 	transition: all 0.5s;
 }
 #footerSection .social-media a:hover {
