@@ -178,8 +178,42 @@ hr {
   color: #FFFFFF;
   position: relative;
 }
-/* modal */
-
+/* modal and carousel gallery */
+#myModal {
+	margin-top: -1.5rem; /* 24px */
+}
+#myModal .modal-header, .modal-content, .modal-body, .modal-footer {
+	margin-top: -0.3125rem; /* 5px */
+	border: none;
+	background-color: rgba(0,0,0,0.0001) !important;
+}
+#myModal .modal-backdrop.show {
+    opacity: 0.8;
+}
+#myModal .close {
+	margin-right: -2rem;
+	text-shadow: none;
+	color: #eee;
+}
+#myModal .close:hover {
+	color: #FFFFFF;
+}
+#myGallery .carousel-inner {
+	margin-top: -1.25rem; /* 20px */
+}
+#myGallery .carousel-control-prev {
+	left: -5rem; /* 80px */
+}
+#myGallery .carousel-control-next {
+	right: -5rem; /* 80px */
+}
+#myModal .slide-description {
+	margin-top: -1rem;
+	border: 0.0625em solid #6AAf08;
+	border-radius: 1em;
+	background: #6AAf08;
+	font-size: calc(0.25em + 0.5vw); /* 4px + 6.38px */
+}
 
 /* TESTIMONIALS SECTION */
 #testimonialSection {
