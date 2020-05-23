@@ -158,70 +158,107 @@ hr {
 	background-color: #6AAf08;
 	color: #FFFFFF;
 }
-/* masking */
-#gallerySection .gallery-item .hover-item {
-	width: 94%;
-	height: 90%;
-	background-color: rgba(0, 0, 0, 0.6);
-	opacity: 0;
-	border-radius: 2%;
-	position: absolute;
-  transition: all 0.5s;
+/* lightbox with js */
+#thumbnailGallery .row > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
-#gallerySection .gallery-item:hover .hover-item {
-  opacity: 1;
-}
-#gallerySection .hover-text {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
-	font-weight: lighter;
-	letter-spacing: 0.09375em; /* 1.5px */
-  color: #FFFFFF;
+/* overlay */
+#thumbnailGallery .filterDiv .overlay {
   position: relative;
 }
-/* modal and carousel gallery */
-#myModal {
-	margin-top: -1.5rem; /* 24px */
+#thumbnailGallery .filterDiv .overlay .masking {
+	top: 0;
+	background: rgba(0,0,0,0.6);
+  opacity: 0;
+	object-fit: cover;
+  position: absolute;
+	z-index: 1;
 }
-.modal-open {
-	overflow: scroll;
+#thumbnailGallery .filterDiv .overlay .masking:hover {
+  opacity: 1;
+	transition: 0.3s;
 }
-#myModal .modal-header, .modal-content, .modal-body, .modal-footer {
-	margin-top: -0.3125rem; /* 5px */
-	border: none;
-	background-color: rgba(0,0,0,0.0001) !important;
+#thumbnailGallery .filterDiv .overlay .cursor {
+	cursor: pointer;
 }
-#myModal .modal-backdrop.show {
-    opacity: 0.8;
+#thumbnailGallery .filterDiv .masking .text {
+  left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 2;
 }
-#myModal .close {
-	margin-right: -2rem;
-	text-shadow: none;
-	color: #eee;
+/* modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0,0,0,0.6);
 }
-#myModal .close:hover {
-	color: #FFFFFF;
+/* modal content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
 }
-#myGallery .carousel-inner {
-	margin-top: -1.25rem; /* 20px */
-	margin-left: -11rem; /*  */
-	width: 100vw;
-	height: 80vh;
+/* button controls */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
 }
-#myGallery .carousel-item img {
-	object-fit: contain;
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
 }
-#myGallery .carousel-control-prev {
-	left: -5rem; /* 80px */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
-#myGallery .carousel-control-next {
-	right: -5rem; /* 80px */
+/* position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-#myModal .slide-description {
-	margin-top: -1rem;
-	border: 0.0625em solid #6AAf08;
-	border-radius: 1em;
-	background: #6AAf08;
-	font-size: calc(0.25em + 0.5vw); /* 4px + 6.38px */
+/* Oon hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
 }
 
 /* TESTIMONIALS SECTION */

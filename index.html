@@ -136,188 +136,129 @@
         <!-- buttons -->
         <div class="row text-nowrap">
           <div id="btnContainer" class="col-md-3">
-            <button id="allBtn" class="ml-2 mr-0 btn-custom btn btn-lg active">All</button>
+            <button id="all" class="ml-2 mr-0 btn-gallery btn-custom btn btn-lg active">All</button>
           </div>
           <div class="col-md-3">
-            <button id="lawnCareBtn" class="ml-0 mr-2 btn-custom btn btn-lg">Lawn Care</button>
+            <button id="lawnCare" class="ml-0 mr-2 btn-gallery btn-custom btn btn-lg">Lawn Care</button>
           </div>
           <div class="col-md-3">
-            <button id="gardenCareBtn" class="ml-1 mr-2 btn-custom btn btn-lg">Garden Care</button>
+            <button id="gardenCare" class="ml-1 mr-2 btn-gallery btn-custom btn btn-lg">Garden Care</button>
           </div>
           <div class="col-md-3">
-            <button id="plantingBtn" class="ml-4 mr-4 btn-custom btn btn-lg">Planting</button>
+            <button id="planting" class="ml-4 mr-4 btn-gallery btn-custom btn btn-lg">Planting</button>
           </div>
         </div>
       </div>
-      <!-- thumbnail gallery -->
-      <div class="row pt-5 pb-5 align-items-center text-center text-uppercase">
-        <!-- photo 1 -->
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="0" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Lorem Ipsum</h4>
-              </div>
-              <img src="./img/portfolio/01-small.jpg" class="img-fluid rounded">
-            </a>
+      <div id="thumbnailGallery" class="row pt-5 pb-5 align-items-center text-center text-uppercase">
+        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="0" class="overlay cursor">
+            <img src="./img/portfolio/01-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 2 -->
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="1" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Adipiscing Elit</h4>
-              </div>
-              <img src="./img/portfolio/02-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="1" class="overlay cursor">
+            <img src="./img/portfolio/02-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 3 -->
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="2" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Lorem Ipsum</h4>
-              </div>
-              <img src="./img/portfolio/03-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="2" class="overlay cursor">
+            <img src="./img/portfolio/03-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 4 -->
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="3" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Lorem Ipsum</h4>
-              </div>
-              <img src="./img/portfolio/04-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="3" class="overlay cursor">
+            <img src="./img/portfolio/04-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 5 -->
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="4" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Adipiscing Elit</h4>
-              </div>
-              <img src="./img/portfolio/05-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="4" class="overlay cursor">
+            <img src="./img/portfolio/05-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 6 -->
-        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="5" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Dolor Sit</h4>
-              </div>
-              <img src="./img/portfolio/06-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="5" class="overlay cursor">
+            <img src="./img/portfolio/06-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 7 -->
-        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="6" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Dolor Sit</h4>
-              </div>
-              <img src="./img/portfolio/07-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="6" class="overlay cursor">
+            <img src="./img/portfolio/07-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 8 -->
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="7" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Lorem Ipsum</h4>
-              </div>
-              <img src="./img/portfolio/08-small.jpg" class="img-fluid rounded">
-            </a>
+        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="7" class="overlay cursor">
+            <img src="./img/portfolio/08-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            </div>
           </div>
         </div>
-        <!-- photo 9 -->
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4" data-toggle="modal" data-target="#myModal">
-          <div class="gallery-item">
-            <a href="#myGallery" data-slide-to="8" title="Project Title">
-              <div class="hover-item">
-                <h4 class="hover-text">Adipiscing Elit</h4>
-              </div>
-              <img src="./img/portfolio/09-small.jpg" class="img-fluid rounded">
-            </a>
-          </div>
-        </div>
-        <!-- modal -->
-        <div id="myModal" class="modal fade" tabindex="-1" role="document">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content mw-100 mh-100">
-              <button type="button" class="close ml-auto justify-content-right" data-dismiss="modal" title="Close">
-                <span>&times;</span>
-              </button>
-              <!-- modal header -->
-              <!-- modal body -->
-              <div class="modal-body">
-                <!-- carousel -->
-                <div id="myGallery" class="carousel slide" data-interval="false">
-                  <div class="carousel-inner mt-0 pt-0">
-                    <!-- photo 1 -->
-                    <div class="carousel-item active">
-                      <img src="./img/portfolio/01-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 2 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/02-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 3 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/03-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 4 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/04-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 5 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/05-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 6 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/06-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 7 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/07-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 8 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/08-large.jpg" class="img-fluid rounded">
-                    </div>
-                    <!-- photo 9 -->
-                    <div class="carousel-item">
-                      <img src="./img/portfolio/09-large.jpg" class="img-fluid rounded">
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#myGallery" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#myGallery" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-              <!-- modal footer -->
-              <div class="modal-footer justify-content-center">
-                <p class="slide-description pt-1 pb-1 pl-3 pr-3 text-white text-capitalize">Projet Title</p>
-              </div>
+        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+          <div id="8" class="overlay cursor">
+            <img src="./img/portfolio/09-small.jpg" class="thumbnail img-fluid rounded">
+            <div class="masking w-100 h-100 rounded">
+              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="myModal" class="modal font-weight-bold text-white">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="./img/portfolio/01-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/02-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/03-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/04-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/05-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/06-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/07-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/08-large.jpg" class="img-fluid w-100">
+          </div>
+          <div class="mySlides">
+            <img src="./img/portfolio/09-large.jpg" class="img-fluid w-100">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- TESTIMONIALS SECTION -->
