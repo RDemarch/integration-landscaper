@@ -1,10 +1,8 @@
 /* VARIABLES */
 
 // get gallery buttons
-const btns = document.querySelectorAll('[class*="btn-gallery"]');
-const buttonContainer = document.getElementById("btnContainer");
-const buttons = buttonContainer.getElementsByClassName("btn");
-//var galleryButtons = allButtons.slice(0, 3);
+const buttons = document.querySelectorAll('[class*="btn-gallery"]');
+const btnContainer = document.getElementById("gallerySection");
 // get gallery thumbnails
 const thumbnails = document.getElementsByClassName("overlay");
 // slide index for lightbox
@@ -50,11 +48,6 @@ function filterSelection(c) {
     }
   }
 };
-/*
-function filterThumbnails() {
-  filterSelection(this.id);
-}
-*/
 // keyboard control
 function logKey(e) {
   if (keys[event.keyCode] !== undefined) {
@@ -99,10 +92,10 @@ function showSlides(n) {
   // display selected thumbnail
   slides[slideIndex-1].style.display = "block";
 }
-// display modal
+// display modal and thumbnail
 function displayThumbnail() {
-  // indexes from 1 to 9
-  let thumbnail = Number(this.id) + 1;
+  // id from 1 to 9
+  let thumbnail = Number(this.id) + 1
   openModal();
   currentSlide(thumbnail);
 }
@@ -118,35 +111,26 @@ const keys = {
 
 /* EVENT LISTENERS */
 
-// filter thumbnails and add active class to current button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {;
-    console.log(this.class)
-    filterSelection(this.id);
-    var current = buttonContainer.getElementsByClassName("active");
-    console.log(current);
-    current.className = current.className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-
-// filter thumbnails
-/*
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", filterThumbnails);
-}
-*/
-// add active class to current button
-/*
+// scroll
+window.addEventListener("scroll", function(e) {
+  currentPosition = window.scrollY;
+  if (currentPosition > 170) {
+    document.getElementById("navbarSection").style.background = "#333";
+    document.getElementById("navbarSection").style.transition = "all 0.5s";
+  } else {
+    document.getElementById("navbarSection").style.background = "transparent";
+    document.getElementById("navbarSection").style.transition = "all 0.5s";
+  }
+});
+// filter thumbnails and add active class to pressed button
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
-    var current = buttonContainer.getElementsByClassName("active");
+    filterSelection(this.id);
+    var current = btnContainer.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
-*/
 // add event listener to all thumbnails
 for (var i = 0; i < thumbnails.length; i++) {
   thumbnails[i].addEventListener("click", displayThumbnail);

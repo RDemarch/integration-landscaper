@@ -154,7 +154,11 @@ hr {
 	background-color: #e6e6e6;
 	color: #555;
 }
-#gallerySection .btn-custom:hover, #gallerySection > .active {
+#gallerySection .btn-custom:hover {
+	background-color: #6AAf08;
+	color: #FFFFFF;
+}
+#gallerySection .active {
 	background-color: #6AAf08;
 	color: #FFFFFF;
 }
