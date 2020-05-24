@@ -138,29 +138,11 @@ hr {
 	font-size: calc(0.375em + 0.5vw); /* 6px */
 }
 /* filter elements with JS */
-#gallerySection .filterDiv {
+#thumbnailGallery .filterDiv {
   display: none; /* hidden by default */
 }
-#gallerySection .show { /* class "show" is added to the filtered elements */
+#thumbnailGallery .show { /* class "show" is added to the filtered elements */
   display: block;
-}
-#gallerySection .visuallyHidden {
-  opacity: 0;
-}
-/* ------- */
-#gallerySection .btn-custom {
-	padding: 0.4375rem 1rem; /* 7px 16px */
-	font-size: calc(0.3125em + 0.5vw);
-	background-color: #e6e6e6;
-	color: #555;
-}
-#gallerySection .btn-custom:hover {
-	background-color: #6AAf08;
-	color: #FFFFFF;
-}
-#gallerySection .active {
-	background-color: #6AAf08;
-	color: #FFFFFF;
 }
 /* lightbox with js */
 #thumbnailGallery .row > img {
@@ -192,11 +174,12 @@ hr {
 	right: 0;
 	top: 0;
 	bottom: 0;
+	font-size: calc(0.28125em + 0.5vw); /* 4.5px */
 	position: absolute;
 	z-index: 2;
 }
 /* modal background */
-.modal {
+#myModal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -209,7 +192,7 @@ hr {
   background-color: rgba(0,0,0,0.6);
 }
 /* modal content */
-.modal-content {
+#myModal .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -217,8 +200,8 @@ hr {
   width: 90%;
   max-width: 1200px;
 }
-/* button controls */
-.close {
+/* modal control buttons */
+#myModal .close {
   color: white;
   position: absolute;
   top: 10px;
@@ -226,14 +209,14 @@ hr {
   font-size: 35px;
   font-weight: bold;
 }
-.close:hover,
-.close:focus {
+#myModal .close:hover,
+#myModal .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-.prev,
-.next {
+#myModal .prev,
+#myModal .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -248,21 +231,34 @@ hr {
   user-select: none;
   -webkit-user-select: none;
 }
-/* position the "next button" to the right */
-.next {
+#myModal .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/* on hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+#myModal .prev:hover,
+#myModal .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.mySlides {
+#myModal .mySlides {
   display: none;
 }
 .cursor {
   cursor: pointer;
+}
+/* element filter buttons */
+#gallerySection .btn-custom {
+	padding: 0.4375rem 1rem; /* 7px 16px */
+	font-size: calc(0.3125em + 0.5vw);
+	background-color: #e6e6e6;
+	color: #555;
+}
+#gallerySection .btn-custom:hover {
+	background-color: #6AAf08;
+	color: #FFFFFF;
+}
+#gallerySection .active {
+	background-color: #6AAf08;
+	color: #FFFFFF;
 }
 
 /* TESTIMONIALS SECTION */
@@ -349,10 +345,11 @@ hr {
 	background-color: #333;
 }
 #footerSection .social-media a {
+	padding: 0.0625rem 0.5rem; /* 1px 8px */
+	background-color: #444;
+	border-radius: 50%;
   font-size: calc(0.8125em + 0.5vw); /* 13px */
 	color: #6aaf08;
-	/* border-radius: 50%; */
-	/* background-color: #fff; */
 	transition: all 0.5s;
 }
 #footerSection .social-media a:hover {
@@ -395,9 +392,6 @@ hr {
 	#contactSection #myEmail {
 		margin-left: -0.3125rem !important;
 	}
-	#contactSection #myMessage {
-		margin-left: 0.015625rem !important;
-	}
 }
 @media screen and (max-width: 768px) {
 	#gallerySection button {
@@ -406,5 +400,4 @@ hr {
 	}
 }
 @media screen and (max-width: 576px) {
-
 }
