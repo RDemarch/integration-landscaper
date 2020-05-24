@@ -134,5 +134,5 @@ for (var i = 0; i < buttons.length; i++) {
 for (var i = 0; i < thumbnails.length; i++) {
   thumbnails[i].addEventListener("click", displayThumbnail);
 }
-// control modal with "left", "right" and "esc" key
+// control modal with "left", "right" and "esc" keys
 document.addEventListener('keydown', logKey);

@@ -346,15 +346,15 @@
         </div>
         <div class="form-row justify-content-center">
           <div class="col-lg-4 mr-1 mb-2">
-            <input id="myName" type="text" class="form-control" placeholder="Name" name="name" required="required">
+            <input id="myName" type="text" class="form-control" placeholder="Name" name="name">
           </div>
           <div class="col-lg-4 ml-1 mb-2">
-            <input id="myEmail" type="email" class="form-control" placeholder="Email" name="email" required="required">
+            <input id="myEmail" type="email" class="form-control" placeholder="Email" name="email">
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <textarea id="myMessage" class="form-control" rows="5" placeholder="Write something..." name="message" required="required"></textarea>
+            <textarea id="myMessage" class="form-control" rows="5" placeholder="Write something..." name="message"></textarea>
           </div>
         </div>
         <div class="row mt-2 mb-5 justify-content-center">
