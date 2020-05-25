@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="./bootstrap.css">
+  <!-- normalize CSS by necolas https://github.com/necolas/normalize.css/ -->
+  <link rel="stylesheet" type="text/css" href="./normalize.css">
   <!-- custom CSS -->
   <link rel="stylesheet" type="text/css" href="./main.css">
   <!-- Open Sans font -->
@@ -66,7 +68,7 @@
   </header>
 
   <!-- ABOUT SECTION -->
-  <section id="aboutSection" class="min-vw-100 min-vh-100 border border-warning" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <section id="aboutSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container">
       <div class="row mt-5 pt-5 mb-5 pb-4 text-black-50 text-left">
         <div class="col-lg-6">
@@ -93,7 +95,7 @@
   </section>
 
   <!-- SERVICES SECTION -->
-  <section id="serviceSection" class="min-vw-100 min-vh-100 border border-white" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <section id="serviceSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container">
       <div class="d-flex flex-column mt-4 pt-5 align-items-center text-white text-center">
         <h1 class="mb-3 font-weight-bolder display-4">Our Services</h1>
@@ -127,7 +129,7 @@
   </section>
 
   <!-- GALLERY SECTION -->
-  <section id="gallerySection" class="min-vw-100 min-vh-100 border border-warning" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <section id="gallerySection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container">
       <div class="d-flex flex-column mt-4 pt-5 align-items-center text-black-50 text-center">
         <h1 class="mb-3 font-weight-bolder text-dark display-4">Project Gallery</h1>
@@ -262,7 +264,7 @@
   </section>
 
   <!-- TESTIMONIALS SECTION -->
-  <section id="testimonialSection" class="border border-white" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <section id="testimonialSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="masking w-100 h-100">
       <div class="container">
         <div class="d-flex flex-column mt-5 pt-5 align-items-center text-white text-center">
@@ -311,7 +313,7 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contactSection" class="min-vw-100 min-vh-100 border border-warning" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <section id="contactSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="container">
       <div class="d-flex flex-column mt-4 pt-5 align-items-center text-black-50 text-center">
         <h1 class="mb-3 font-weight-bolder text-dark display-4">Contact Us</h1>

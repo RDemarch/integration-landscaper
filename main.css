@@ -5,8 +5,8 @@ vh : a percentage of the full viewport height (1vh : 6.93px) */
 
 /* DOCUMENT SETTINGS */
 html, body {
-	width: 100vw !important;
-	height: 100vh !important;
+	width: 100%!important;
+	height: 100% !important;
 	font-family: 'Open Sans', sans-serif;
 	/* minimum 16x, and grows more slowly (half the rate of screen growth) */
   font-size: calc(1em + 0.5vw); /* 16px + 6.38px */
@@ -70,7 +70,7 @@ hr {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	border: solid 1px white;
 }
@@ -78,6 +78,7 @@ hr {
 	background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%);
 }
 #headerSection .headerPresentation{
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -110,6 +111,9 @@ hr {
 /* ABOUT SECTION */
 #aboutSection {
 	background: #F5F5F5;
+	min-width: 100%;
+	min-height: 100vh;
+	border: 1px solid #ffc107;
 }
 #aboutSection span {
 	color: #70ad47;
@@ -130,6 +134,9 @@ hr {
 #serviceSection {
 	background-color: #6AAf08;
 	background-size: cover;
+	min-width: 100%;
+	min-height: 100vh;
+	border: solid 1px white;
 }
 #serviceSection img {
 	max-width: 85%;
@@ -154,6 +161,9 @@ hr {
 /* GALLERY SECTION */
 #gallerySection {
 	background: #F5F5F5;
+	min-width: 100%;
+	min-height: 100vh;
+	border: solid 1px #ffc107;
 }
 #gallerySection h1 {
 	font-size: calc(1em + 0.5vw); /* 16px */
@@ -287,10 +297,11 @@ hr {
 
 /* TESTIMONIALS SECTION */
 #testimonialSection {
-	width: 100vw;
+	width: 100%;
 	height: 75vh;
 	background: url('img/testimonials-bg.jpg') center center no-repeat fixed;
 	background-size: cover;
+	border: 1px solid white;
 }
 #testimonialSection .masking {
 	margin-top: -3rem; /* 48px */
@@ -327,6 +338,9 @@ hr {
 /* CONTACT SECTION */
 #contactSection {
 	background: #F5F5F5;
+	min-width: 100%;
+	min-height: 100vh;
+	border: solid 1px #ffc107
 }
 #contactSection .contact-item {
 	color: #696969;
