@@ -54,15 +54,13 @@
   </nav>
 
   <!-- HOME SECTION -->
-  <header id="headerSection" class="vw-100 vh-100 border border-white" data-spy="scroll" data-target="#navbarSection" data-offset="0">
+  <header id="headerSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
     <div class="masking">
-      <div class="container">
-        <div class="vh-100 d-flex flex-column mt-5 pt-5 align-items-center text-white text-center">
-          <h1 class="mt-auto mb-3 font-weight-bolder text-uppercase display-5">Landscaping Services</h1>
+        <div class="headerPresentation">
+          <h1 class="">Landscaping Services</h1>
           <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
           <h6 class="">Duis sed dapibus leo nec ornare diam.</h6>
-          <a class="btn-custom btn btn-lg mt-5 mb-auto" href="#aboutSection">More Info</a>
-        </div>
+          <a class="btn-custom" href="#aboutSection">More Info</a>
       </div>
     </div>
   </header>
