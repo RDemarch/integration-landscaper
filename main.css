@@ -92,6 +92,10 @@ hr {
   border-top: 0.0625em solid rgba(255,255,255,0.4); /* 1px */
   border-bottom: 0.0625em solid rgba(255,255,255,0.4);
 }
+#headerSection hr {
+  margin-left: 0;
+	margin-bottom: 1.5rem;
+}
 #headerSection h1 {
 	letter-spacing: 0.025em;
 	/* grows more quickly, allowing for wider variation on larger screens */
@@ -115,21 +119,72 @@ hr {
 	min-height: 100vh;
 	border: 1px solid #ffc107;
 }
+#aboutSection .aboutContent {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	padding-top: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin-bottom: 3rem;
+	padding-bottom: 1.5rem;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: left;
+	width: 100%;
+}
+#aboutSection .aboutText {
+	width: 45%;
+	margin: auto;
+}
+#aboutSection .aboutImage {
+	width: 20%;
+	margin-top: 0;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#aboutSection img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.25rem;
+}
 #aboutSection span {
 	color: #70ad47;
+}
+#aboutSection h6 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	color: #343a40;
 }
 #aboutSection h3 {
 	font-size: calc(1em + 0.5vw); /* 16px */
 }
-#aboutSection .row p {
-	font-size: calc(0.3125em + 0.5vw); /* 5px */
-	font-weight: 600;
+#aboutSection .btn-custom {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 3.125rem;
+	padding: 0.5rem 0.9375rem; /* 8px 15px */
+	border-radius: 0.375em; /* 6px */
+	background-color: #6AAf08;
+	letter-spacing: 0.0625em; /* 1px */
+	font-size: calc(0.375em + 0.5vw); /* 6px + 6.38px */
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	line-height: 1.5;
 }
-#aboutSection .col-lg-3 > .image-description {
-	font-size: calc(0.28125em + 0.5vw); /* 4.5px */
-	font-weight: 600;
+#aboutSection .btn-custom:hover {
+	background-color: #5f9d07;
+	text-decoration: none;
+	color: #FFFFFF;
 }
-
+#aboutSection .btn-custom:focus {
+	box-shadow: 0 0 0.375em rgba(255,255,255,0.1);
+}
 /* SERVICES SECTION */
 #serviceSection {
 	background-color: #6AAf08;
@@ -153,6 +208,7 @@ hr {
 }
 #serviceSection h6 {
 	font-size: calc(0.375em + 0.5vw); /* 4px */
+
 }
 #serviceSection .row p {
 	font-size: calc(0.28125em + 0.5vw); /* 4.5px */
@@ -275,6 +331,10 @@ hr {
 }
 #myModal .mySlides {
   display: none;
+}
+#myModal img {
+	width: 100%;
+	height: auto;
 }
 .cursor {
   cursor: pointer;

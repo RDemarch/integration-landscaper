@@ -69,34 +69,33 @@
 
   <!-- ABOUT SECTION -->
   <section id="aboutSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="container">
-      <div class="row mt-5 pt-5 mb-5 pb-4 text-black-50 text-left">
-        <div class="col-lg-6">
+
+      <div class="aboutContent">
+        <div class="aboutText">
           <h3 class="font-weight-bold text-dark">Welcome to <span class="font-weight-bolder">Landscaper</span></h3>
-          <hr class="ml-0 mb-4">
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam
             commodo nibh.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo
             nibh.</p>
-          <a class="btn-custom btn btn-lg mb-5" href="#serviceSection">View All Services</a>
+          <a class="btn-custom" href="#serviceSection">View All Services</a>
         </div>
-        <div class="col-lg-3">
-          <img src="./img/about-1.jpg" class="w-100 img-fluid rounded">
-          <h6 class="mt-3 mb-3 font-weight-bold text-dark">Garden Care</h6>
+        <div class="aboutImage">
+          <img src="./img/about-1.jpg" class="">
+          <h6>Garden Care</h6>
           <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
         </div>
-        <div class="col-lg-3">
-          <img src="./img/about-2.jpg" class="w-100 img-fluid rounded">
-          <h6 class="mt-3 mb-3 font-weight-bold text-dark">Lawn Care</h6>
+        <div class="aboutImage">
+          <img src="./img/about-2.jpg" class="">
+          <h6>Lawn Care</h6>
           <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
         </div>
-      </div>
     </div>
   </section>
 
   <!-- SERVICES SECTION -->
   <section id="serviceSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="container">
+    <div class="serviceContent">
       <div class="d-flex flex-column mt-4 pt-5 align-items-center text-white text-center">
         <h1 class="mb-3 font-weight-bolder display-4">Our Services</h1>
         <hr class="mt-0 mb-3">
@@ -230,31 +229,31 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
-            <img src="./img/portfolio/01-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/01-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/02-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/02-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/03-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/03-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/04-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/04-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/05-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/05-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/06-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/06-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/07-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/07-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/08-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/08-large.jpg" class=" ">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/09-large.jpg" class="img-fluid w-100">
+            <img src="./img/portfolio/09-large.jpg" class=" ">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
