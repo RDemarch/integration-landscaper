@@ -95,33 +95,33 @@
 
   <!-- SERVICES SECTION -->
   <section id="serviceSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="serviceContent">
-      <div class="d-flex flex-column mt-4 pt-5 align-items-center text-white text-center">
-        <h1 class="mb-3 font-weight-bolder display-4">Our Services</h1>
-        <hr class="mt-0 mb-3">
-        <h6 class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
+    <div id="serviceContent">
+      <div id="serviceTitle">
+        <h1>Our Services</h1>
+        <hr>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
       </div>
       <!-- services photos -->
-      <div class="row mb-5 pt-3 pb-5 justify-content-center text-center text-white">
-        <div class="col-lg-3">
-          <img src="./img/services/service-1.jpg" class="img-fluid rounded-circle">
-          <h3 class="pt-4">Lawn Care</h3>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+      <div id="serviceImage">
+        <div class="boxImage">
+          <img src="./img/services/service-1.jpg">
+          <h3>Lawn Care</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-lg-3">
-          <img src="./img/services/service-2.jpg" class="img-fluid rounded-circle">
-          <h3 class="pt-4">Landscape Design</h3>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        <div class="boxImage">
+          <img src="./img/services/service-2.jpg">
+          <h3>Landscape Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-lg-3">
-          <img src="./img/services/service-3.jpg" class="img-fluid rounded-circle">
-          <h3 class="pt-4">Tree Care</h3>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        <div class="boxImage">
+          <img src="./img/services/service-3.jpg">
+          <h3>Tree Care</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
-        <div class="col-lg-3">
-          <img src="./img/services/service-4.jpg" class="img-fluid rounded-circle">
-          <h3 class="pt-4 text-nowrap">Spring & Fall Cleanup</h3>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        <div class="boxImage">
+          <img src="./img/services/service-4.jpg">
+          <h3>Spring & Fall Cleanup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
       </div>
     </div>
