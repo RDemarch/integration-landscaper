@@ -265,20 +265,19 @@
 
   <!-- TESTIMONIALS SECTION -->
   <section id="testimonialSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="masking w-100 h-100">
-      <div class="container">
-        <div class="d-flex flex-column mt-5 pt-5 align-items-center text-white text-center">
-          <h1 class="mt-4 mb-3 pt-3 font-weight-bolder text-uppercase display-4">Testimonials</h1>
-          <hr class="mt-0 mb-4">
+    <div class="masking">
+        <div class="testimonialTitle">
+          <h1 class="">Testimonials</h1>
+          <hr class="">
         </div>
         <div id="testimonials" class="carousel slide" data-ride="carousel" data-interval="1500">
           <ul class="carousel-indicators">
-            <li class="m-1" data-target="#testimonials" data-slide-to="0" class="active"></li>
-            <li class="m-1" data-target="#testimonials" data-slide-to="1"></li>
-            <li class="m-1" data-target="#testimonials" data-slide-to="2"></li>
-            <li class="m-1" data-target="#testimonials" data-slide-to="3"></li>
+            <li class="" data-target="#testimonials" data-slide-to="0" class="active"></li>
+            <li class="" data-target="#testimonials" data-slide-to="1"></li>
+            <li class="" data-target="#testimonials" data-slide-to="2"></li>
+            <li class="" data-target="#testimonials" data-slide-to="3"></li>
           </ul>
-          <div class="carousel-inner pt-5 pb-3 align-items-center text-center">
+          <div class="carousel-inner">
             <!-- adds slides to the carousel -->
             <div class="carousel-item active">
               <!-- specifies the content of each slide -->
@@ -309,7 +308,6 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- CONTACT SECTION -->
