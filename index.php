@@ -129,28 +129,28 @@
 
   <!-- GALLERY SECTION -->
   <section id="gallerySection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="container">
-      <div class="d-flex flex-column mt-4 pt-5 align-items-center text-black-50 text-center">
-        <h1 class="mb-3 font-weight-bolder text-dark display-4">Project Gallery</h1>
-        <hr class="mt-0 mb-3">
-        <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
+    <div id="galleryContent">
+      <div id="galleryNav">
+        <h1>Project Gallery</h1>
+        <hr>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
         <!-- buttons -->
-        <div class="row text-nowrap">
-          <div id="btnContainer" class="col-md-3">
-            <button id="all" class="ml-2 mr-0 btn-gallery btn-custom btn btn-lg active">All</button>
+        <div class="btnBox">
+          <div id="btnContainer" class="galleryBtn">
+            <button id="all" class="btn-gallery btn-custom active">All</button>
           </div>
-          <div class="col-md-3">
-            <button id="lawnCare" class="ml-0 mr-2 btn-gallery btn-custom btn btn-lg">Lawn Care</button>
+          <div class="galleryBtn">
+            <button id="lawnCare" class="btn-gallery btn-custom">Lawn Care</button>
           </div>
-          <div class="col-md-3">
-            <button id="gardenCare" class="ml-1 mr-2 btn-gallery btn-custom btn btn-lg">Garden Care</button>
+          <div class="galleryBtn">
+            <button id="gardenCare" class="btn-gallery btn-custom">Garden Care</button>
           </div>
-          <div class="col-md-3">
-            <button id="planting" class="ml-4 mr-4 btn-gallery btn-custom btn btn-lg">Planting</button>
+          <div class="galleryBtn">
+            <button id="planting" class="btn-gallery btn-custom">Planting</button>
           </div>
         </div>
       </div>
-      <div id="thumbnailGallery" class="row pt-5 pb-5 align-items-center text-center text-uppercase">
+      <div id="thumbnailGallery">
         <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
           <div id="0" class="overlay cursor">
             <img src="./img/portfolio/01-small.jpg" class="thumbnail img-fluid rounded">

@@ -266,14 +266,74 @@ hr {
 	min-width: 100%;
 	min-height: 100vh;
 	border: solid 1px #ffc107;
+
+}
+#galleryContent {
+	margin: auto;
+	width: 80%;
+	height: 100%;
+}
+#galleryNav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1.5rem;
+	padding-top: 3rem;
+	color: #343a40;
+	text-align: center;
+}
+#galleryNav .btnBox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-overflow: clip;
+	width: 80%;
 }
 #gallerySection h1 {
 	font-size: calc(1em + 0.5vw); /* 16px */
+	margin-bottom: 1rem;
+	font-weight: bolder;
+	color: #343a40;
 }
 #gallerySection h6 {
 	font-size: calc(0.375em + 0.5vw); /* 6px */
+	margin-bottom: 1.5rem;
+}
+#galleryNav hr {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+#all  {
+	margin-left: 0.5rem;
+	margin-right: 0;
+}
+#lawnCare  {
+	margin-left: 0;
+	margin-right: 0.5rem;
+}
+#gardenCare  {
+	margin-left: 0.25rem;
+	margin-right: 0.5rem;
+}
+#planting  {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.galleryBtn {
+	width: 20%
 }
 /* filter elements with JS */
+#thumbnailGallery {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	flex-wrap: wrap;
+}
 #thumbnailGallery .filterDiv {
   display: none; /* hidden by default */
 }
