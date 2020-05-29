@@ -338,29 +338,29 @@
         </div>
       </div>
       <form action="mail.php" method="post" enctype="application/x-www-form-urlencoded">
-        <div class="pt-5 pb-2 text-dark text-center">
+        <div class="leaveUsMessage">
           <h3>Leave us a message</h3>
         </div>
-        <div class="form-row justify-content-center">
-          <div class="col-lg-4 mr-1 mb-2">
+        <div class="formInfo">
+          <div class="formName">
             <input id="myName" type="text" class="form-control" placeholder="Name" name="name">
           </div>
-          <div class="col-lg-4 ml-1 mb-2">
+          <div class="formMail">
             <input id="myEmail" type="email" class="form-control" placeholder="Email" name="email">
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
+        <div class="formMessage">
+          <div class="messageContent">
             <textarea id="myMessage" class="form-control" rows="5" placeholder="Write something..." name="message"></textarea>
           </div>
         </div>
-        <div class="row mt-2 mb-5 justify-content-center">
+        <div class="formBtn">
           <button type="button" class="btn-custom btn" data-toggle="modal" name="submit" data-target="#contactModal">Send Message</button>
         </div>
       </form>
     </div>
     <!-- CONTACT MODAL -->
-    <div id="contactModal" class="modal fade text-center justify-content-center" tabindex="-1" role="dialog">
+    <div id="contactModal" class="modal modalBox fade" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <!-- modal header -->
@@ -369,11 +369,11 @@
             <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
           </div>
           <!-- modal body -->
-          <div class="modal-body font-weight-light justify-content-center">
-            <h6>Thank you for contacting <span class="font-weight-bolder text-success">Landscaper.</span><br>We will be in touch with you soon!</h6>
+          <div class="modal-body">
+            <h6>Thank you for contacting <span class="brandNameModal">Landscaper.</span><br>We will be in touch with you soon!</h6>
           </div>
           <!-- modal footer -->
-          <div class="modal-footer mx-auto">
+          <div class="modal-footer">
             <button type="button" class="btn-custom btn" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -383,26 +383,26 @@
 
   <!-- FOOTER SECTION -->
   <footer id="footerSection" class="border border-white">
-    <div class="container">
-      <div class="row mt-4 mb-5">
-        <div class="social-media col-4 text-right">
+    <div class="footContainer">
+      <div class="footContent">
+        <div class="social-media fbIconBox">
           <a href="https://www.facebook.com/">
-            <i class="fa fa-facebook rounded"></i>
+            <i class="fa fa-facebook fbIcon"></i>
           </a>
         </div>
-        <div class="social-media col-4 text-center">
+        <div class="social-media twIconBox">
           <a href="https://twitter.com/explore">
-            <i class="fa fa-twitter rounded"></i>
+            <i class="fa fa-twitter twIcon"></i>
           </a>
         </div>
-        <div class="social-media col-4 text-left">
+        <div class="social-media gpIconBox">
           <a href="https://plus.google.com/">
-            <i class="fa fa-google-plus-official rounded"></i>
+            <i class="fa fa-google-plus-official gpIcon"></i>
           </a>
         </div>
       </div>
-      <div class="bottom d-flex mt-3 mb-2 align-items-center text-center">
-        <p class="mx-auto">© 2020 Landscaper. Designed by <span><a href="http://www.templatewire.com/">TemplateWire</a></span>. Web Integration by <span><a href="https://github.com/sergio-nunez-meneses">Sergio Núñez Meneses</a></span></p>
+      <div class="bottom">
+        <p>© 2020 Landscaper. Designed by <span><a href="http://www.templatewire.com/">TemplateWire</a></span>. Web Integration by <span><a href="https://github.com/sergio-nunez-meneses">Sergio Núñez Meneses</a></span></p>
       </div>
     </div>
   </footer>
