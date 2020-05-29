@@ -137,7 +137,7 @@
         <!-- buttons -->
         <div class="btnBox">
           <div id="btnContainer" class="galleryBtn">
-            <button id="all" class="btn-gallery btn-custom active">All</button>
+            <button id="all" class="btn-gallery btn-custom active" data-rel>All</button>
           </div>
           <div class="galleryBtn">
             <button id="lawnCare" class="btn-gallery btn-custom">Lawn Care</button>
@@ -151,81 +151,81 @@
         </div>
       </div>
       <div id="thumbnailGallery">
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare">
           <div id="0" class="overlay cursor">
             <img src="./img/portfolio/01-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting">
           <div id="1" class="overlay cursor">
             <img src="./img/portfolio/02-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare">
           <div id="2" class="overlay cursor">
             <img src="./img/portfolio/03-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare">
           <div id="3" class="overlay cursor">
             <img src="./img/portfolio/04-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting">
           <div id="4" class="overlay cursor">
             <img src="./img/portfolio/05-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv gardenCare">
           <div id="5" class="overlay cursor">
             <img src="./img/portfolio/06-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv gardenCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv gardenCare">
           <div id="6" class="overlay cursor">
             <img src="./img/portfolio/07-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv lawnCare p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv lawnCare">
           <div id="7" class="overlay cursor">
             <img src="./img/portfolio/08-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
-        <div class="filterDiv planting p-2 pt-0 col-xs-1 col-sm-6 col-lg-4">
+        <div class="filterDiv planting">
           <div id="8" class="overlay cursor">
             <img src="./img/portfolio/09-small.jpg" class="thumbnail img-fluid rounded">
-            <div class="masking w-100 h-100 rounded">
-              <p class="text w-50 h-50 mx-auto mt-auto text-white text-center">Lorem ipsum.</p>
+            <div class="masking">
+              <p class="text">Lorem ipsum.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="myModal" class="modal font-weight-bold text-white">
+      <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
@@ -311,27 +311,27 @@
 
   <!-- CONTACT SECTION -->
   <section id="contactSection" class="" data-spy="scroll" data-target="#navbarSection" data-offset="0">
-    <div class="container">
-      <div class="d-flex flex-column mt-4 pt-5 align-items-center text-black-50 text-center">
-        <h1 class="mb-3 font-weight-bolder text-dark display-4">Contact Us</h1>
-        <hr class="mt-0 mb-3">
-        <h6 class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
-        <div class="row pt-3 justify-content-center text-black-50 text-center text-nowrap">
-          <div class="contact-item col-lg-3 mr-5">
-            <h3 class="text-dark">Address</h3>
-            <hr class="mt-0">
+    <div id="contactContent">
+      <div class="contactInfo">
+        <h1>Contact Us</h1>
+        <hr class="">
+        <h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</h6>
+        <div class="infoBox">
+          <div class="address contact-item">
+            <h3>Address</h3>
+            <hr>
             <p>4321 California St,</p>
             <p class="contact-information">San Francisco, CA 12345</p>
           </div>
-          <div class="contact-item col-lg-3 ml-3 mr-3">
-            <h3 class="text-dark">Working Hours</h3>
-            <hr class="mt-0">
-            <p style="margin-left: -0.75rem;">Monday-Saturday: 07:00 - 18:00</p>
-            <p class="contact-information">Sunday: <span class="font-weight-bold text-uppercase"> Closed</span></p>
+          <div class="contact-item hours">
+            <h3>Working Hours</h3>
+            <hr>
+            <p class="horaire">Monday-Saturday: 07:00 - 18:00</p>
+            <p class="contact-information">Sunday: <span class="cferme"> Closed</span></p>
           </div>
-          <div class="contact-item col-lg-3 ml-5">
-            <h3 class="text-dark">Contact Info</h3>
-            <hr class="mt-0">
+          <div class="phone contact-item">
+            <h3 >Contact Info</h3>
+            <hr>
             <p>Phone: +1 123 456 1234</p>
             <p class="contact-information">Email: info@company.com</p>
           </div>

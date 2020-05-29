@@ -270,7 +270,7 @@ hr {
 }
 #galleryContent {
 	margin: auto;
-	width: 80%;
+	width: 90%;
 	height: 100%;
 }
 #galleryNav {
@@ -322,16 +322,16 @@ hr {
 }
 
 .galleryBtn {
-	width: 20%
+	width: 25%
 }
 /* filter elements with JS */
 #thumbnailGallery {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 3rem;
-	padding-bottom: 3rem;
 	flex-wrap: wrap;
 }
 #thumbnailGallery .filterDiv {
@@ -357,6 +357,23 @@ hr {
 	object-fit: cover;
   position: absolute;
 	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.375em;
+}
+#thumbnailGallery .masking p {
+	width: 50%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	color: white;
+	text-align: center;
+}
+#thumbnailGallery img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.375em;
 }
 #thumbnailGallery .filterDiv .overlay .masking:hover {
   opacity: 1;
@@ -373,6 +390,21 @@ hr {
 	font-size: calc(0.28125em + 0.5vw); /* 4.5px */
 	position: absolute;
 	z-index: 2;
+}
+.lawnCare {
+	padding: 0.5rem;
+	padding-top: 0;
+	width: 30%;
+}
+.gardenCare {
+	padding: 0.5rem;
+	padding-top: 0;
+	width: 30%;
+}
+.planting {
+	padding: 0.5rem;
+	padding-top: 0;
+	width: 30%;
 }
 /* modal background */
 #myModal {
@@ -441,6 +473,10 @@ hr {
 #myModal img {
 	width: 100%;
 	height: auto;
+}
+#myModal .modal {
+	font-weight: bold;
+	color: white;
 }
 .cursor {
   cursor: pointer;
@@ -538,8 +574,52 @@ hr {
 #contactSection .contact-item {
 	color: #696969;
 }
+#contactSection .infoBox {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-top: 1rem;
+	justify-content: center;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-overflow: clip;
+}
+#contactSection .address {
+	width: 20%;
+	margin-right: 3rem;
+}
+#contactSection .hours {
+	width: 20%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+#contactSection .phone {
+	width: 20%;
+	margin-left: 3rem;
+}
+#contactSection .horaire {
+	margin-left: -0.75rem;
+}
+#contactSection .cferme {
+	font-weight: bold;
+	text-transform: uppercase;
+}
 #contactSection h1 {
 	font-size: calc(1em + 0.5vw); /* 16px */
+	margin-bottom: 1rem;
+	font-weight: bolder;
+	color: #343a40 !important;
+}
+#contactSection hr {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+#contactSection .contact-item hr {
+	margin-top: 0;
+}
+#contactSection .contact-item h3 {
+	color: #343a40 !important;
 }
 #contactSection h3 {
 	font-size: calc(0.375em + 0.5vw); /* 6px */
@@ -548,6 +628,7 @@ hr {
 }
 #contactSection h6 {
 	font-size: calc(0.375em + 0.5vw); /* 6px */
+	margin-bottom: 3rem;
 }
 #contactSection p {
 	font-size: calc(0.3125em + 0.5vw); /* 5px */
@@ -570,7 +651,20 @@ hr {
 #contactSection .row hr {
 	background: #ddd;
 }
-
+#contactContent {
+	margin: auto;
+	width: 90%;
+	height: 100%;
+}
+#contactContent .contactInfo {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5rem;
+	padding-top: 3rem;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
 /* FOOTER SECTION */
 #footerSection {
 	background-color: #333;
@@ -648,11 +742,51 @@ hr {
 	#serviceImage .boxImage {
 		width: 80%;
 	}
+	.lawnCare {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 100%;
+	}
+	.planting {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 100%;
+	}
+	.gardenCare {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 100%;
+	}
 }
 @media screen and (max-width: 768px) {
 	#gallerySection button {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+	}
+	.lawnCare {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 45%;
+	}
+	.planting {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 45%;
+	}
+	.gardenCare {
+		padding: 0.5rem;
+		padding-top: 0;
+		width: 45%;
+	}
+	#contactSection .address {
+		width: 100%;
+		margin-right: 3rem;
+	}
+	#contactSection .hours {
+		width: 100%;
+	}
+	#contactSection .phone {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 576px) {
