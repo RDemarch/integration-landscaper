@@ -72,7 +72,7 @@
 
       <div class="aboutContent">
         <div class="aboutText">
-          <h3 class="font-weight-bold text-dark">Welcome to <span class="font-weight-bolder">Landscaper</span></h3>
+          <h3>Welcome to <span>Landscaper</span></h3>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam
             commodo nibh.</p>
@@ -402,7 +402,7 @@
         </div>
       </div>
       <div class="bottom">
-        <p>© 2020 Landscaper. Designed by <span><a href="http://www.templatewire.com/">TemplateWire</a></span>. Web Integration by <span><a href="https://github.com/sergio-nunez-meneses">Sergio Núñez Meneses</a></span></p>
+        <p>© 2020 Landscaper. Designed by <span><a href="http://www.templatewire.com/">TemplateWire</a></span>. Web Integration by <span><a href="https://github.com/sergio-nunez-meneses">Sergio Núñez Meneses</a></span> and <span><a href="https://github.com/RDemarch">Robin De March</a></span></p>
       </div>
     </div>
   </footer>

@@ -164,6 +164,17 @@ hr {
 }
 #aboutSection h3 {
 	font-size: calc(1em + 0.5vw); /* 16px */
+	font-weight: bold;
+	color: #343a40;
+}
+.aboutText p {
+	font-size: 0.9rem;
+}
+#aboutSection h3 span{
+	font-weight: bold;
+}
+.aboutImage .image-description{
+	font-size: 0.9rem;
 }
 #aboutSection .btn-custom {
 	display: inline-block;
