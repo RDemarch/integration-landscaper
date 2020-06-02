@@ -414,9 +414,9 @@
   <script type="text/javascript" src="./jquery-3.5.0.js"></script>
   -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./bootstrap.js"></script>
+  <script src="./bootstrap.js"></script>
   <!-- custom JS -->
-  <script type="text/javascript" src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
