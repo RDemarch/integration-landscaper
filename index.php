@@ -81,12 +81,12 @@
           <a class="btn-custom" href="#serviceSection">View All Services</a>
         </div>
         <div class="aboutImage">
-          <img src="./img/about-1.jpg" class="">
+          <img src="./img/about-1.jpg" alt="Illustration Image" class="">
           <h6>Garden Care</h6>
-          <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+          <p class="image-description" alt="Illustration Image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
         </div>
         <div class="aboutImage">
-          <img src="./img/about-2.jpg" class="">
+          <img src="./img/about-2.jpg" alt=""class="">
           <h6>Lawn Care</h6>
           <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
         </div>
@@ -104,22 +104,22 @@
       <!-- services photos -->
       <div id="serviceImage">
         <div class="boxImage">
-          <img src="./img/services/service-1.jpg">
+          <img src="./img/services/service-1.jpg" alt="Lawn Care">
           <h3>Lawn Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="boxImage">
-          <img src="./img/services/service-2.jpg">
+          <img src="./img/services/service-2.jpg" alt="Landscape Design">
           <h3>Landscape Design</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="boxImage">
-          <img src="./img/services/service-3.jpg">
+          <img src="./img/services/service-3.jpg" alt="Tree Care">
           <h3>Tree Care</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
         <div class="boxImage">
-          <img src="./img/services/service-4.jpg">
+          <img src="./img/services/service-4.jpg" alt="Spring & Fall Cleanup">
           <h3>Spring & Fall Cleanup</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
         </div>
@@ -153,7 +153,7 @@
       <div id="thumbnailGallery">
         <div class="filterDiv lawnCare">
           <div id="0" class="overlay cursor">
-            <img src="./img/portfolio/01-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/01-small.jpg" class="thumbnail img-fluid rounded" alt="Lawn Care 1">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -161,7 +161,7 @@
         </div>
         <div class="filterDiv planting">
           <div id="1" class="overlay cursor">
-            <img src="./img/portfolio/02-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/02-small.jpg" class="thumbnail img-fluid rounded" alt="Planting 1">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -169,7 +169,7 @@
         </div>
         <div class="filterDiv lawnCare">
           <div id="2" class="overlay cursor">
-            <img src="./img/portfolio/03-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/03-small.jpg" class="thumbnail img-fluid rounded" alt="Lawn Care 2">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -177,7 +177,7 @@
         </div>
         <div class="filterDiv lawnCare">
           <div id="3" class="overlay cursor">
-            <img src="./img/portfolio/04-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/04-small.jpg" class="thumbnail img-fluid rounded" alt="Lawn Care 3">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -185,7 +185,7 @@
         </div>
         <div class="filterDiv planting">
           <div id="4" class="overlay cursor">
-            <img src="./img/portfolio/05-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/05-small.jpg" class="thumbnail img-fluid rounded" alt="Planting 2">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -193,7 +193,7 @@
         </div>
         <div class="filterDiv gardenCare">
           <div id="5" class="overlay cursor">
-            <img src="./img/portfolio/06-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/06-small.jpg" class="thumbnail img-fluid rounded" alt="Garden Care 1">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -201,7 +201,7 @@
         </div>
         <div class="filterDiv gardenCare">
           <div id="6" class="overlay cursor">
-            <img src="./img/portfolio/07-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/07-small.jpg" class="thumbnail img-fluid rounded" alt="Garden Care 2">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -209,7 +209,7 @@
         </div>
         <div class="filterDiv lawnCare">
           <div id="7" class="overlay cursor">
-            <img src="./img/portfolio/08-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/08-small.jpg" class="thumbnail img-fluid rounded" alt="Lawn Care 4">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -217,7 +217,7 @@
         </div>
         <div class="filterDiv planting">
           <div id="8" class="overlay cursor">
-            <img src="./img/portfolio/09-small.jpg" class="thumbnail img-fluid rounded">
+            <img src="./img/portfolio/09-small.jpg" class="thumbnail img-fluid rounded" alt="Planting 3">
             <div class="masking">
               <p class="text">Lorem ipsum.</p>
             </div>
@@ -229,31 +229,31 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="mySlides">
-            <img src="./img/portfolio/01-large.jpg" class=" ">
+            <img src="./img/portfolio/01-large.jpg" class=" " alt="Lawn Care 1">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/02-large.jpg" class=" ">
+            <img src="./img/portfolio/02-large.jpg" class=" " alt="Planting 1">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/03-large.jpg" class=" ">
+            <img src="./img/portfolio/03-large.jpg" class=" " alt="Lawn Care 2">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/04-large.jpg" class=" ">
+            <img src="./img/portfolio/04-large.jpg" class=" " alt="Lawn Care 3">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/05-large.jpg" class=" ">
+            <img src="./img/portfolio/05-large.jpg" class=" " alt="Planting 2">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/06-large.jpg" class=" ">
+            <img src="./img/portfolio/06-large.jpg" class=" " alt="Garden Care 1">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/07-large.jpg" class=" ">
+            <img src="./img/portfolio/07-large.jpg" class=" " alt="Garden Care 2">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/08-large.jpg" class=" ">
+            <img src="./img/portfolio/08-large.jpg" class=" " alt="Lawn Care 4">
           </div>
           <div class="mySlides">
-            <img src="./img/portfolio/09-large.jpg" class=" ">
+            <img src="./img/portfolio/09-large.jpg" class=" " alt="Planting 3">
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>

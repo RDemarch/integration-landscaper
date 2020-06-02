@@ -166,15 +166,16 @@ hr {
 	font-size: calc(1em + 0.5vw); /* 16px */
 	font-weight: bold;
 	color: #343a40;
+	text-align: center;
 }
 .aboutText p {
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 }
 #aboutSection h3 span{
 	font-weight: bold;
 }
 .aboutImage .image-description{
-	font-size: 0.9rem;
+	font-size: 1.3rem;
 }
 #aboutSection .btn-custom {
 	display: inline-block;
