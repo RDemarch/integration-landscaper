@@ -83,10 +83,10 @@
         <div class="aboutImage">
           <img src="./img/about-1.jpg" alt="Illustration Image" class="">
           <h6>Garden Care</h6>
-          <p class="image-description" alt="Illustration Image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+          <p class="image-description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
         </div>
         <div class="aboutImage">
-          <img src="./img/about-2.jpg" alt=""class="">
+          <img src="./img/about-2.jpg" alt="Illustration Image" class="">
           <h6>Lawn Care</h6>
           <p class="image-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
         </div>
@@ -271,7 +271,7 @@
         </div>
         <div id="testimonials" class="carousel slide" data-ride="carousel" data-interval="1500">
           <ul class="carousel-indicators">
-            <li class="" data-target="#testimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonials" data-slide-to="0" class="active"></li>
             <li class="" data-target="#testimonials" data-slide-to="1"></li>
             <li class="" data-target="#testimonials" data-slide-to="2"></li>
             <li class="" data-target="#testimonials" data-slide-to="3"></li>
