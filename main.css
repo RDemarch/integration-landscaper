@@ -32,7 +32,7 @@ hr {
 	text-align: center;
 	vertical-align: middle;
 	margin-top: 3rem;
-	margin-bottom: auto;
+	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0.5rem 0.9375rem; /* 8px 15px */
@@ -79,16 +79,18 @@ hr {
 }
 #headerSection .masking {
 	background: linear-gradient(rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%);
+	height: 100%;
 }
 #headerSection .headerPresentation{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	align-content: center;
+	justify-content: center;
 	color: white;
-	padding-top: 3rem;
 	margin-top: 3rem;
 }
 #headerSection .btn-custom {
@@ -102,7 +104,7 @@ hr {
 #headerSection h1 {
 	letter-spacing: 0.025em;
 	/* grows more quickly, allowing for wider variation on larger screens */
-  font-size: calc(1.4375em + 1.5vw); /* 23px + 19.14px */
+  font-size: 1.8rem; /* 23px + 19.14px */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	font-weight: bolder;
@@ -112,7 +114,7 @@ hr {
 #headerSection h6 {
 	margin-bottom: 0.25em; /* 4px */
 	letter-spacing: 0.03125em;
-	font-size: calc(0.5em + 0.5vw); /* 6px + 6.38px */
+	font-size: 1.5rem; /* 6px + 6.38px */
 }
 
 /* ABOUT SECTION */
@@ -157,13 +159,14 @@ hr {
 	color: #70ad47;
 }
 #aboutSection h6 {
-	margin-top: 1rem;
+	margin-top: 1.2rem;
 	margin-bottom: 1rem;
 	font-weight: bold;
 	color: #343a40;
+	font-size: 1.2rem;
 }
 #aboutSection h3 {
-	font-size: calc(1em + 0.5vw); /* 16px */
+	font-size: 1.5rem; /* 16px */
 	font-weight: bold;
 	color: #343a40;
 	text-align: center;
@@ -186,7 +189,7 @@ hr {
 	border-radius: 0.375em; /* 6px */
 	background-color: #6AAf08;
 	letter-spacing: 0.0625em; /* 1px */
-	font-size: calc(0.375em + 0.5vw); /* 6px + 6.38px */
+	font-size: 0.8rem; /* 6px + 6.38px */
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -222,7 +225,7 @@ hr {
 	color: white;
 }
 #serviceTitle h1{
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	font-weight: bolder;
 }
 #serviceTitle hr{
@@ -262,13 +265,13 @@ hr {
 	background: rgba(255,255,255,0.6);
 }
 #serviceSection h1 {
-	font-size: calc(1em + 0.5vw); /* 16px */
+	font-size: 1.5rem; /* 16px */
 }
 #serviceSection .row h3 {
-	font-size: calc(0.6250em + 0.5vw); /* 11px */
+	font-size: 1.2rem; /* 11px */
 }
 #serviceSection h6 {
-	font-size: calc(0.375em + 0.5vw); /* 4px */
+	font-size: 1; /* 4px */
 
 }
 #serviceImage p {
@@ -306,13 +309,13 @@ hr {
 	width: 80%;
 }
 #gallerySection h1 {
-	font-size: calc(1em + 0.5vw); /* 16px */
+	font-size: 1.5rem; /* 16px */
 	margin-bottom: 1rem;
 	font-weight: bolder;
 	color: #343a40;
 }
 #gallerySection h6 {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
+	font-size: 1.2rem; /* 6px */
 	margin-bottom: 1.5rem;
 }
 #galleryNav hr {
@@ -548,7 +551,7 @@ hr {
  	height: 0.375em;
 }
 #testimonialSection .carousel-item p {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
+	font-size: 1rem; /* 6px */
 	font-weight: 500;
   color: #FFFFFF;
 }
@@ -568,7 +571,7 @@ hr {
 	margin-bottom: 1.5rem;
 }
 #testimonialSection h1 {
-	font-size: calc(0.9375em + 0.5vw); /* 15px */
+	font-size: 1.5rem; /* 15px */
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 	padding-top: 1rem;
@@ -632,21 +635,23 @@ hr {
 }
 #contactSection .contact-item hr {
 	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 #contactSection .contact-item h3 {
 	color: #343a40 !important;
 }
 #contactSection h3 {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
+	font-size: 1.2rem; /* 6px */
 	font-weight: 600;
 	text-transform: uppercase;
 }
 #contactSection h6 {
-	font-size: calc(0.375em + 0.5vw); /* 6px */
+	font-size: 1rem; /* 6px */
 	margin-bottom: 3rem;
 }
 #contactSection p {
-	font-size: calc(0.3125em + 0.5vw); /* 5px */
+	font-size: 1rem; /* 5px */
 }
 .leaveUsMessage {
 	padding-top: 3rem;
@@ -814,12 +819,30 @@ hr {
 /* MEDIA QUERIES */
 @media screen and (max-width: 992px) {
 	:root {
-		font-size: 18px;
+		font-size: 27px;
+	}
+	#contactSection form{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.infoBox {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.formInfo {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		flex-wrap: nowrap;
+		justify-content: center;
 	}
 	#contactSection .contact-item {
 		margin-top: 1rem !important;
-		margin-left: 0 !important;
-		margin-right: 0 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+
 	}
 	#contactSection #myName {
 		margin-right: 0 !important;
@@ -840,7 +863,7 @@ hr {
 		width: 80% !important;
 	}
 	.aboutImage img {
-		width: 50% !important;
+		width: 90% !important;
 	}
 	.image-description {
 		width: 100%;
@@ -870,7 +893,7 @@ hr {
 }
 @media screen and (max-width: 768px) {
 	:root {
-		font-size: 20px;
+		font-size: 27px;
 	}
 	#gallerySection button {
 		margin-left: 0 !important;
@@ -911,7 +934,6 @@ hr {
 	}
 	.formMail {
 		width: 100%;
-		margin-right: 0.5rem;
 		margin-left: 0.25rem;
 	}
 	.messageContent {
@@ -920,6 +942,6 @@ hr {
 }
 @media screen and (max-width: 576px) {
 	:root {
-		font-size: 20px;
+		font-size: 25px;
 	}
 }
